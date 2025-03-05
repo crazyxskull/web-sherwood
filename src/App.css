@@ -1,5 +1,37 @@
 @import "tailwindcss";
 @import "./typography.css";
+
+/* @tailwind utilities; */
+
+@font-face {
+  font-family: 'Xtra';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('/src/assets/fonts/Xtra.ttf');
+  font-family: 'Quadrata_Friz';
+  src: url('/src/assets/fonts/Quadrata_Friz.ttf');
+  font-family: 'SegoeItalic';
+  src: url('/src/assets/fonts/SegoeItalic.ttf');
+  font-family: 'QuadrataOSTBold';
+  src: url('/src/assets/fonts/QuadrataOSTBold.ttf');
+
+}
+@theme {
+  --font-xtra: 'Xtra';
+  --font-SegoeItalic: 'SegoeItalic';
+  --font-Quadrata: 'Quadrata';
+  --font-QuadrataOst: 'QuadrataOSTBold';
+  --color-redSherwood : #c92641;
+  --color-redSherwood-hov : #861729;
+  --color-textSherwood : #fff2a8;
+  --color-blackSherwood : #3a0810;
+}
+
+.Sherwood{
+  color:#ffffff;
+  color:#fff2a8;
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

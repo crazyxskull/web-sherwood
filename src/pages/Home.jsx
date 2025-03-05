@@ -1,20 +1,27 @@
 // src/components/Home.jsx
 import React from 'react';
-import Header from '../components/Header'
+import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+import ButtonRed from '../components/buttons/buttonRed';
+import PlayerCard from '../components/Home/PlayerCard';
 console.log("este es un print desde el app.jsx")
 
 function Home() {
     return (
-        <div >
+        <div class="bg-gray-950">
 
             <Header />
-            <div class="flex flex-col-2">
-                <h1>Bienvenido al HOME!</h1>
-                <div className="bg-sky-600">
-                    <h2>Mi pagina de presentacion</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quaerat commodi perspiciatis magnam repellat, at non perferendis dignissimos voluptatem autem molestias. Ex, illum? Numquam at quam facilis nam, quod excepturi?</p>
+            <div class="flex flex-col  m-6">
 
+                <h1>Bienvenido al HOME!</h1>
+                <div>
+                    <PlayerCard />
+                </div>
+                <div className="flex items-center h-full">
+                    <Link to="/Play" className="flex items-center relative w-full h-full py-0">
+                        <ButtonRed text="Jugar Sherwood!" />
+                    </Link>
                 </div>
                 <table>
                     <tr>
@@ -49,22 +56,16 @@ function Home() {
                 </div>
             </div>
             <div class="flex flex-col-2">
-                <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+                <div class="bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
                     <div>
                         <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
-                            <svg
-                                class="h-6 w-6 text-white"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
+                            <svg class="h-6 w-6 stroke-white">
                                 {/* <!-- ... --> */}
                             </svg>
                         </span>
                     </div>
-                    <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight ">Writes upside-down</h3>
-                    <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
+                    <h3 class="text-white mt-5 text-base font-medium tracking-tight ">Writes upside-down</h3>
+                    <p class=" text-gray-400 mt-2 text-sm ">
                         The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
                     </p>
                 </div>
@@ -94,7 +95,7 @@ function Home() {
                 </label>
 
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
