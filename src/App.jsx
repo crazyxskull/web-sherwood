@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Paginas
 import Home from './pages/Home';
-import Play from './pages/Play'
+import Play from './pages/Play';
+import AuthPage from './pages/AuthPage';
+import Registro from './components/Registro';
 // import Home from './components/Home';
 import './App.css'
 import './pages/Play'
@@ -14,6 +16,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/AuthPage" element={<AuthPage />} />
+        <Route path="/Registro" element={<Registro />} />
         <Route path="/Play" element={<Play/>}/>
       </Routes>
     </BrowserRouter>

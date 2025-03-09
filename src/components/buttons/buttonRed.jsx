@@ -12,8 +12,8 @@ function ButtonRed({ text }) {
                  from-redSherwood to-redSherwood 
                   text-textSherwood  border-3 hover:from-redSherwood
                    border-textSherwood rounded-lg
-                   px-3 py-1 text-sm font-QuadrataOst 
-                   cursor-pointer transition-all duration-300 top-1 
+                   px-3 py-1 
+                   cursor-pointer transition-all duration-100 
                    hover:scale-105 shadow-md hover:shadow-lg"
                 onClick={handleClick}
             >

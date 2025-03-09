@@ -8,29 +8,102 @@
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url('/src/assets/fonts/Xtra.ttf');
-  font-family: 'Quadrata_Friz';
-  src: url('/src/assets/fonts/Quadrata_Friz.ttf');
-  font-family: 'SegoeItalic';
-  src: url('/src/assets/fonts/SegoeItalic.ttf');
-  font-family: 'QuadrataOSTBold';
-  src: url('/src/assets/fonts/QuadrataOSTBold.ttf');
-
+  src: url('/src/assets/fonts/Xtra.ttf') format('truetype'); /* Especifica el formato */
 }
+
+@font-face {
+  font-family: 'Quadrata_Friz';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/src/assets/fonts/Quadrata_Friz.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SegoeItalic';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/src/assets/fonts/SegoeItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'QuadrataOSTBold';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('/src/assets/fonts/QuadrataOSTBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TrajanProReg';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/src/assets/fonts/TrajanProReg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TrajanProBold';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('/src/assets/fonts/TrajanProBold.ttf') format('truetype');
+}
+
+
 @theme {
   --font-xtra: 'Xtra';
   --font-SegoeItalic: 'SegoeItalic';
-  --font-Quadrata: 'Quadrata';
+  --font-Quadrata: 'Quadrata_Friz'; /* Corregido el nombre */
   --font-QuadrataOst: 'QuadrataOSTBold';
+  --font-TrajanProBold: 'TrajanProBold';
+  --font-TrajanProReg: 'TrajanProReg';
   --color-redSherwood : #c92641;
   --color-redSherwood-hov : #861729;
   --color-textSherwood : #fff2a8;
   --color-blackSherwood : #3a0810;
+  --color-bgSherwod : #fff5d4;
+  --color-Brown-500 : #967120;
+  --color-Brown-700 : #775712;
+  --color-Brown-950 : #2e2106;
 }
 
+/* Estilos de bordes y otros... */
+
+.border-sherwood{
+  border: 40px solid;
+  border-image-source: url('/src/assets/marcos/borde-Sherwood.svg');
+  border-image-slice: 40;
+  border-image-outset: 1rem;
+  border-image-repeat:round;
+}
+.border-sherwood2{
+  border: 40px solid;
+  border-image-source: url('/src/assets/marcos/Marco.svg');
+  border-image-slice: 40;
+  /* border-image-outset: 2rem; */
+  border-image-repeat:round;
+}
+.border-sherwoodred{
+  border: 40px solid;
+  border-image-source: url('/src/assets/marcos/marcoRed.svg');
+  border-image-slice: 40;
+  border-image-repeat: round;
+}
+.border-button{
+  border:10px solid;
+  border-image-source: url('/src/assets/marcos/MarcoButton.svg');
+  border-image-slice:200;
+  border-image-outset: 6px;
+  border-image-repeat: round;
+}
+.bg-maidmarian{
+  border-image-source: url('/src/assets/FondoMaidmarian.png');
+}
 .Sherwood{
   color:#ffffff;
-  color:#fff2a8;
+  color:#fff5d4;
 }
 /* #root {
   max-width: 1280px;
