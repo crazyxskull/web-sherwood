@@ -8,12 +8,11 @@ import AuthPage from './pages/AuthPage';
 import Registro from './components/Registro';
 // import Home from './components/Home';
 import './App.css'
-import './pages/Play'
 
 function App() {
   console.log("este es un print desde el app.jsx")
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-sherwood">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AuthPage" element={<AuthPage />} />
