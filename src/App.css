@@ -67,6 +67,7 @@
   --color-Brown-500 : #967120;
   --color-Brown-700 : #775712;
   --color-Brown-950 : #2e2106;
+  --color-bgblack : #282828;
 }
 
 /* Estilos de bordes y otros... */
@@ -84,6 +85,13 @@
   border-image-slice: 40;
   /* border-image-outset: 2rem; */
   border-image-repeat:round;
+}
+.border-brown{
+  /* border-bottom: 15px solid; */
+  border-top: 15px solid;
+  border-image-source: url('/src/assets/marcos/borde.svg');
+  border-image-slice: 80;
+  border-image-repeat: round;
 }
 .border-sherwoodred{
   border: 40px solid;
@@ -103,7 +111,7 @@
 }
 .Sherwood{
   color:#ffffff;
-  color:#fff5d4;
+  color:#292929;
 }
 /* #root {
   max-width: 1280px;

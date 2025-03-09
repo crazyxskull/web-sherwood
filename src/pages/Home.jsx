@@ -35,9 +35,9 @@ function Home() {
                             </div>
 
                         </div>
-                        <div className="flex items-center justify-center h-full mt-6  text-4xl font-extrabold">
+                        <div className="flex items-center justify-center h-full mt-6  text-lg font-QuadrataOst">
                             <Link to="/Play" className="flex items-center justify-center relative w-full h-full py-0">
-                                <ButtonRed text="Jugar Sherwood!" />
+                                <ButtonRed text="JUGAR SHERWOOD!" />
                             </Link>
                         </div>
 
