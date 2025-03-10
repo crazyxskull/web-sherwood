@@ -12,7 +12,6 @@ import FondoMaidmarian from '../assets/FondoMaidmarian.png'
 import ButtonBrown from '../components/buttons/buttonbrown';
 import Login from '../components/Login';
 import Registro from '../components/Registro';
-// import videoloading from '../assets/video/videoloading.mp4';
 
 
 function AuthPage() {
@@ -31,7 +30,6 @@ function AuthPage() {
             style={{ backgroundImage: `url(${ladymarianImage})` }}  // Aquí usamos la imagen importada
         >
             
-            {/* <video class="flex absolute bg-video"src={videoloading} autoPlay loop muted/> */}
             <div className="flex flex-col border-sherwood bg-radial from-amber-50 from-10% to-bgSherwod w-auto min-w-2/5 relative" >
                 {isLogin ? <Login /> : <Registro />}  {/* Renderizado condicional */}
                 <hr class="w-64 h-px my-4 border-0 mx-auto bg-gray-300" />
