@@ -23,6 +23,7 @@ function AuthPage() {
         setIsLogin(!isLogin); // Cambia el estado al hacer clic en el botón
     };
 
+    
 
     return (
         <div
