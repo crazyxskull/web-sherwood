@@ -12,7 +12,7 @@ import FondoMaidmarian from '../assets/FondoMaidmarian.png'
 import ButtonBrown from '../components/buttons/buttonbrown';
 import Login from '../components/Login';
 import Registro from '../components/Registro';
-import videoloading from '../assets/video/videoloading.mp4';
+// import videoloading from '../assets/video/videoloading.mp4';
 
 
 function AuthPage() {
@@ -23,7 +23,7 @@ function AuthPage() {
         setIsLogin(!isLogin); // Cambia el estado al hacer clic en el botón
     };
 
-    
+
 
     return (
         <div
