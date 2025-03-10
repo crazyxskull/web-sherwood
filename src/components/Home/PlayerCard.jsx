@@ -5,9 +5,9 @@ import CharacterSkull from '../../assets/CharacterSkull.png'
 import UserLogo from '../../assets/usuario-logo.png'
 function PlayerCard() {
     return (
-        <div class="max-w-sm w-full lg:max-w-full lg:flex bg-gray-800 rounded-lg">
+        <div class="flex w-full max-w-full bg-gray-800 rounded-lg border-dungeon">
 
-            <div class="border-r border-b border-l border-gray-900  bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class=" bg-gray-800 p-4 flex flex-col justify-between leading-normal">
                 <div class="mb-8">
                     <p class="text-sm text-gray-600 flex items-center">
                         <svg class="fill-current text-white w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

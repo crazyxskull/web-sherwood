@@ -71,9 +71,15 @@
 }
 
 /* Estilos de bordes y otros... */
-
+.border-dungeon{
+  border: 30px solid;
+  border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
+  border-image-slice: 60;
+  border-image-outset: 1rem;
+  border-image-repeat:round;
+}
 .border-sherwood{
-  border: 40px solid;
+  border: 50px solid;
   border-image-source: url('/src/assets/marcos/borde-Sherwood.svg');
   border-image-slice: 40;
   border-image-outset: 1rem;
@@ -108,6 +114,9 @@
 }
 .bg-maidmarian{
   border-image-source: url('/src/assets/FondoMaidmarian.png');
+}
+.bg-video{
+background-color: #000000ab;
 }
 .Sherwood{
   color:#ffffff;

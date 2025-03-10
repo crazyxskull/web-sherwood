@@ -10,14 +10,14 @@ console.log("este es un print desde el app.jsx")
 function Header() {
     return (
         <div class="flex flex-col w-full">
-            <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 border-brown
-                        items-center gap-x-4 = bg-gray-950
-                px-2 sm:px-4 shadow-sm transition-all w-full">
+            <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
+                        items-center gap-x-4 bg-gray-800
+                px-2 sm:px-4 shadow-sm transition-all w-full ">
                 <div class="mb-6 md:mb-0 col-span-2">
                     <Link to="/" className="flex items-center relative w-full h-full py-0">
 
                         {/* <img src={LogoSherwood} class="h-8 w-auto my-4" alt="Logo" /> */}
-                        <h1 className="text-3xl font-QuadrataOst tracking-tight text-white">Sherwood Dungeon</h1>
+                        <h1 className="text-2xl font-QuadrataOst tracking-tight text-white">Sherwood Dungeon</h1>
                     </Link>
                 </div>
                 <div class="col-span-4 col-2 text-white font-Quadrata text xl">
@@ -38,7 +38,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div className="flex bg-gray-500 w-full border-brown">
+            <div className="flex bg-gray-500 w-full ">
                 <ul className="flex text-sm font-QuadrataOst text-center  text-gray-400 shadow-sm sm:flex w-full">
                     
                     <li className="flex-1 focus-within:z-10">

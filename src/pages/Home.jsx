@@ -19,44 +19,16 @@ function Home() {
                 <div>
                     <Header />
                     <div class="flex flex-col m-6">
-                        <h1 class="flex text-3xl font-TrajanProBold text-cyan-50">Bienvenido Sherwoodiano!</h1>
+                        <h1 class="flex text-3xl font-TrajanProBold text-cyan-50">Descripcion de la Pagina</h1>
                         <div class="grid grid-cols-2 mt-4">
                             <div class="flex  mr-4">
                                 <PlayerCard />
                             </div>
-                            <div class=" gap-4 rounded-lg text-white">
-                                <ul >
-                                    <li>Sales</li>
-                                    <li>Marketing</li>
-                                    <li>SEO</li>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ut, impedit sint animi optio maxime id. Excepturi vel numquam nostrum, obcaecati reprehenderit unde, a expedita praesentium est natus harum adipisci!</p>
-                                    {/* <!-- ... --> */}
-                                </ul>
-                            </div>
-
                         </div>
                         <div className="flex items-center justify-center h-full mt-6  text-lg font-QuadrataOst">
                             <Link to="/Play" className="flex items-center justify-center relative w-full h-full py-0">
                                 <ButtonRed text="JUGAR SHERWOOD!" />
                             </Link>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col-2">
-                        <h2>Categories</h2>
-                        <ul class="*:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 ...">
-                            <li>Sales</li>
-                            <li>Marketing</li>
-                            <li>SEO</li>
-                            {/* <!-- ... --> */}
-                        </ul>
-                        <iframe class="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-                    </div>
-                    <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-                        <img class="size-12 shrink-0" src="/img/logo.svg" alt="ChitChat Logo" />
-                        <div>
-                            <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
-                            <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
                         </div>
                     </div>
                     <div class="flex flex-col-2">
