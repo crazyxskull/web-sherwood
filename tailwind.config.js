@@ -15,5 +15,5 @@ module.exports = {
       'maidmarian': `url('${FondoMaidmarian}')`,
     }
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 }
