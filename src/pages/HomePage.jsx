@@ -16,7 +16,7 @@ function HomePage() {
             style={{ backgroundImage: `url(${ladymarianImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className="flex w-full">
-                <div className="w-62"> {/* Ancho fijo para el Sidebar. Ajusta según necesidad */}
+                <div className="w-58"> {/* Ancho fijo para el Sidebar. Ajusta según necesidad */}
                     <Sidebar />
                 </div>
                 <div className="flex flex-col flex-grow">

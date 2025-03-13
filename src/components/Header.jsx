@@ -10,7 +10,7 @@ console.log("este es un print desde el app.jsx")
 
 function Header() {
     return (
-        <div class="flex flex-col w-full font-QuadrataOst">
+        <header class="flex flex-col w-full font-QuadrataOst">
             <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
                         items-center gap-x-4 bg-gray-800
                 px-2 sm:px-4 shadow-sm transition-all w-full ">
@@ -26,14 +26,15 @@ function Header() {
                 </div>
                 <div class="flex flex-row col-span-1 col-6 gap-4">
                     <div className="flex h-full">
-                        <div class="flex flex-row items-center">
-                            <img class="w-12 h-auto rounded-full mr-4 bg-black-900" alt="Logo" src={SwLogo} />
-                            <div class="flex flex-col text-sm items-start">
-                                <p class="text-gray-100 leading-none">Jonathan Reinink </p>
-                                <p class="text-gray-200">Aug 18</p>
+                        <Link to="/Profile" className="flex justify-center items-center relative w-full h-full mx-auto col-span-1 col-7">
+                            <div class="flex flex-row items-center">
+                                <img class="w-12 h-auto rounded-full mr-4 bg-black-900" alt="Logo" src={SwLogo} />
+                                <div class="flex flex-col text-sm items-start">
+                                    <p class="text-gray-100 leading-none">Jonathan Reinink </p>
+                                    <p class="text-gray-200">Aug 18</p>
+                                </div>
                             </div>
-                        </div>
-
+                        </Link>
                     </div>
                 </div>
                 <Link to="/AuthPage" className="flex justify-center items-center relative w-full h-full mx-auto col-span-1 col-7">
@@ -42,11 +43,14 @@ function Header() {
                     </div>
                 </Link>
             </div>
-            <div className="flex bg-gray-500 w-full ">
+            {/* <div className="flex bg-gray-500 w-full ">
                 <ul className="flex text-sm font-QuadrataOst text-center  text-gray-400 shadow-sm sm:flex w-full">
-
                     <li className="flex-1 focus-within:z-10">
-                        <a href="#" className="inline-block w-full p-2 border-r border-gray-700 hover:text-gray-100 hover:bg-gray-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:text-white dark:hover:bg-gray-600" aria-current="page">Profile</a>
+                        <Link to="/Profile" className="flex justify-center items-center relative w-full h-full mx-auto col-span-1 col-7">
+                            <h2 class="inline-block w-full p-2 border-r border-gray-700 hover:text-gray-100 hover:bg-gray-700 focus:ring-4 focus:ring-blue-300 focus:outline-none">
+                                Profile
+                            </h2>
+                        </Link>
                     </li>
                     <li className="flex-1 focus-within:z-10">
                         <a href="#" className="inline-block w-full p-2 border-r border-gray-700 hover:text-gray-100 hover:bg-gray-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:text-white dark:hover:bg-gray-600">Dashboard</a>
@@ -58,10 +62,10 @@ function Header() {
                         <a href="#" className="inline-block w-full p-2 border-s-0 border-gray-700 rounded-e-lg hover:text-gray-100 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:text-white dark:hover:bg-gray-600">Invoice</a>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
 
-        </div>
+        </header>
     );
 }
 export default Header;

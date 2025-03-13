@@ -61,6 +61,7 @@
   --font-TrajanProBold: 'TrajanProBold';
   --font-TrajanProReg: 'TrajanProReg';
   --color-redSherwood : #c92641;
+  --color-redSherwood-500 : #ec2e4d;
   --color-redSherwood-hov : #861729;
   --color-redSherwood-800: #610e22;
   --color-redSherwood-900: #500b17;
@@ -73,34 +74,31 @@
   --color-Brown-950 : #2e2106;
   --color-bgblack : #282828;
 }
+.Sherwood{
+  color:#ffffff;
+  color:#ec2e4d;
+}
 
 /* MARCOS PERSONALIZADOS SHERWOOD */
 .border-dungeon{
   border: 30px solid;
   border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
   border-image-slice: 60;
-  border-image-outset: 1rem;
+  border-image-outset: 5px;
   border-image-repeat:round;
 }
 .border-t-dungeon{
   border-top: 30px solid;
   border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
   border-image-slice: 60;
-  border-image-outset: 1rem;
+  border-image-outset: 5px;
   border-image-repeat:round;
 }
 .border-sherwood{
-  border: 50px solid;
+  border: 40px solid;
   border-image-source: url('/src/assets/marcos/borde-Sherwood.svg');
   border-image-slice: 40;
-  border-image-outset: 1rem;
-  border-image-repeat:round;
-}
-.border-sherwood2{
-  border: 40px solid;
-  border-image-source: url('/src/assets/marcos/Marco.svg');
-  border-image-slice: 40;
-  /* border-image-outset: 2rem; */
+  border-image-outset: 5px;
   border-image-repeat:round;
 }
 .border-brown{
@@ -128,8 +126,4 @@
 }
 .bg-blacktransparente{
 background-color: #000000ab;
-}
-.Sherwood{
-  color:#ffffff;
-  color:#500b17;
 }

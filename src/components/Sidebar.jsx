@@ -1,18 +1,18 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
 
-  const ListItem = ({ text }) => {
+  const ListItem = ({ text,link }) => {
     return (
       <div>
         <li className="flex flex-col relative hover:bg-gradient-to-b 
                    from-redSherwood from-75% to-blackSherwood hover:from-redSherwood
                      rounded-lg 
                      cursor-pointer ">
-          <a href="#" class="block py-2 px-4  rounded">
-            <span class="mr-2">+</span> {text}
-          </a>
-        </li> 
+            <Link to={link} className="block py-2 px-4  rounded">
+              <span class="mr-2">+</span> {text}
+            </Link>
+        </li>
         <hr class="w-42 h-px my-2 border-0 mx-auto bg-gray-700" />
       </div>
     );
@@ -20,7 +20,7 @@ const Sidebar = () => {
 
   return (
     <aside class=" flex-col sticky top-0 z-40 bg-gray-800 
-      w-62 p-4 h-screen justify-start items-start text-white hidden sm:flex">
+      w-58 p-4 h-screen justify-start items-start text-white hidden sm:flex">
       <div class="font-TrajanProBold">
         <h1 class="text-xl">
           BIENVENIDO SHERWOODIANO
@@ -28,15 +28,17 @@ const Sidebar = () => {
         <hr class="w-50 h-px my-4 border-0 mx-auto bg-gray-300 mb-6" />
         <nav class="text-xs">
           <ul class="space-y-2">
-            <ListItem text={"REGISTRARSE"} />
-            <ListItem text={"SOCIAL - HABLA CON OTROS JUGADORES"} />
-            <ListItem text={"LIBRO DE HISTORIA"} />
-            <ListItem text={"CREAR ARCHIVO"} />
-            <ListItem text={"REDES SOCIALES"} />
-            <ListItem text={"PVP"} />
-            <ListItem text={"GUERRA DE CLANES"} />
-            <ListItem text={"MISIONES"} />
-            <ListItem text={"SUGERENCIAS"} />
+          <ListItem link={"/Play"} text={"PLAY SHERWOOD!"} />
+            <ListItem link={"/"} text={"INICIO"} />
+            <ListItem link={"/Profile"} text={"MI PERFIL"} />
+            <ListItem link={"/#"} text={"SOCIAL - HABLA CON OTROS JUGADORES"} />
+            <ListItem link={"/#"} text={"LIBRO DE HISTORIA"} />
+            <ListItem link={"/#"} text={"CREAR ARCHIVO"} />
+            <ListItem link={"/#"} text={"REDES SOCIALES"} />
+            <ListItem link={"/#"} text={"PVP"} />
+            <ListItem link={"/#"} text={"GUERRA DE CLANES"} />
+            <ListItem link={"/#"} text={"MISIONES"} />
+            <ListItem link={"/#"} text={"SUGERENCIAS"} />
           </ul>
         </nav>
         <div class="mt-8">
