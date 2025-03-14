@@ -63,6 +63,7 @@
   --color-redSherwood : #c92641;
   --color-redSherwood-500 : #ec2e4d;
   --color-redSherwood-hov : #861729;
+  --color-redSherwood-700: #b12a2a;
   --color-redSherwood-800: #610e22;
   --color-redSherwood-900: #500b17;
   --color-textSherwood : #fff2a8;
@@ -75,11 +76,32 @@
   --color-bgblack : #282828;
 }
 .Sherwood{
-  color:#ffffff;
-  color:#ec2e4d;
+  color:#b12a2a;
+  color:#610e22;
 }
 
 /* MARCOS PERSONALIZADOS SHERWOOD */
+.border-gold{
+  border: 10px solid;
+  border-image: url("/src/assets/marcos/gold.png") 10 round; /* Borde con imagen */
+  border-image-slice: 20;
+  border-image-outset: 5px;
+  border-image-repeat:round;
+}
+.border-piedra{
+  border: 60px solid;
+  border-image: url("/src/assets/marcos/marco-piedra.png") 10 round; /* Borde con imagen */
+  border-image-slice: 200;
+  border-image-outset: 5px;
+  border-image-repeat:round;
+}
+.bg-medieval{
+  background-image: url("/src/assets/medieval-texture.png"); /* Fondo de papel */
+  background-size: cover; /* Ajusta el fondo al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
 .border-dungeon{
   border: 30px solid;
   border-image-source: url('/src/assets/marcos/marco-dungeon.svg');

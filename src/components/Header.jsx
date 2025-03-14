@@ -4,15 +4,16 @@ import LogoSherwood from '../assets/SherwoodLogo.webp';
 import UserLogo from '../assets/usuario-logo.png'
 import SwLogo from '../assets/SwLogo.png'
 import { Link } from 'react-router-dom';
+import { FaFacebookMessenger, FaEnvelope, FaSearch, FaTools } from "react-icons/fa";
 import '../App.css'; // Importa tu archivo CSS principal
 import ButtonRed from './buttons/buttonRed';
 console.log("este es un print desde el app.jsx")
 
 function Header() {
     return (
-        <header class="flex flex-col w-full font-QuadrataOst">
+        <header class="flex flex-col w-full font-QuadrataOst ">
             <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
-                        items-center gap-x-4 bg-gray-800
+                        items-center gap-x-4 bg-gray-800 
                 px-2 sm:px-4 shadow-sm transition-all w-full ">
                 <div class="mb-6 md:mb-0 col-span-2">
                     <Link to="/" className="flex items-center relative w-full h-full py-0">
@@ -21,11 +22,36 @@ function Header() {
                         <h1 className="text-2xl tracking-tight text-white">Sherwood Dungeon</h1>
                     </Link>
                 </div>
-                <div class="col-span-4 col-2 text-white font-Quadrata text xl">
+                <div class="col-span-2  text-white font-Quadrata text xl">
                     <h2>CONTENIDO</h2>
                 </div>
+                <div class="flex col-span-2 text-white h-12 w-auto gap-4 justify-start items-center">
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <div class="relative flex items-center  bg-white/15 text-gray-300 text-sm rounded-2xl  
+                               ">
+                            <input
+                                class="w-full  pr-3 pl-3 py-2  transition duration-300 ease focus:outline-none focus:border-slate-300"
+                                placeholder="Busqueda....." />
+                            <button
+                                class="rounded-2xl  ml-2  p-2.5 text-sm text-white transition hover:bg-slate-700"
+                                type="button">
+                                <FaSearch class="h-5 w-auto" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex col-span-1 text-white gap-6 justify-end items-center mr-2 ">
+                        <button class="rounded-md bg-slate-800 p-2.5 text-sm text-white transition hover:bg-slate-700"
+                            type="button">
+                            <FaEnvelope class="h-5 w-auto " />
+                        </button>
+                        <button class="rounded-md bg-slate-800 p-2.5 text-sm text-white transition hover:bg-slate-700"
+                            type="button">
+                            <FaTools class="h-5 w-auto" />
+                        </button>
+                    </div>
+                </div>
                 <div class="flex flex-row col-span-1 col-6 gap-4">
-                    <div className="flex h-full">
+                    <div className="flex h-full col-span-1">
                         <Link to="/Profile" className="flex justify-center items-center relative w-full h-full mx-auto col-span-1 col-7">
                             <div class="flex flex-row items-center">
                                 <img class="w-12 h-auto rounded-full mr-4 bg-black-900" alt="Logo" src={SwLogo} />

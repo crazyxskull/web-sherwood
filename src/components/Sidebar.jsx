@@ -25,15 +25,15 @@ const Sidebar = () => {
         <h1 class="text-xl">
           BIENVENIDO SHERWOODIANO
         </h1>
-        <hr class="w-50 h-px my-4 border-0 mx-auto bg-gray-300 mb-6" />
-        <nav class="text-xs">
+        <hr class="w-50 h-px my-4 border-0 mx-auto bg-gray-300 mb-6 " />
+        <nav class="text-xs ">
           <ul class="space-y-2">
           <ListItem link={"/Play"} text={"PLAY SHERWOOD!"} />
             <ListItem link={"/"} text={"INICIO"} />
             <ListItem link={"/Profile"} text={"MI PERFIL"} />
-            <ListItem link={"/#"} text={"SOCIAL - HABLA CON OTROS JUGADORES"} />
+            <ListItem link={"/SherwoodMetaverse"} text={"CHAT SHERWOOD"} />
             <ListItem link={"/#"} text={"LIBRO DE HISTORIA"} />
-            <ListItem link={"/#"} text={"CREAR ARCHIVO"} />
+            <ListItem link={"/Clanes"} text={"CLANES"} />
             <ListItem link={"/#"} text={"REDES SOCIALES"} />
             <ListItem link={"/#"} text={"PVP"} />
             <ListItem link={"/#"} text={"GUERRA DE CLANES"} />
