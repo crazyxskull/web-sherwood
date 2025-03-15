@@ -85,7 +85,7 @@
   border: 10px solid;
   border-image: url("/src/assets/marcos/gold.png") 10 round; /* Borde con imagen */
   border-image-slice: 20;
-  border-image-outset: 5px;
+  /* border-image-outset: 5px; */
   border-image-repeat:round;
 }
 .border-piedra{

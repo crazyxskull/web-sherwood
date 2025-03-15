@@ -8,7 +8,9 @@ import Play from './pages/Play';
 import AuthPage from './pages/AuthPage';
 import Profile from './pages/Profile';
 import SherwoodMetaverse from './pages/SherwoodMetaverse';
-import Clanes from './pages/Clanes'
+import Clanes from './pages/Clanes';
+import Tutorial from './pages/Tutorial';
+import Descargas from './pages/Descargas';
 // import Registro from './components/Registro';
 
 import './App.css'
@@ -24,6 +26,8 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/SherwoodMetaverse" element={<SherwoodMetaverse />} />
         <Route path="/Clanes" element={<Clanes />} />
+        <Route path="/Tutorial" element={<Tutorial />} />
+        <Route path="/Descargas" element={<Descargas />} />
         {/* <Route path="/Registro" element={<Registro />} /> */}
         <Route path="/Play" element={<Play/>}/>
       </Routes>
