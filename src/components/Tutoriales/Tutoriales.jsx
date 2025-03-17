@@ -3,6 +3,7 @@ import browser from '../../assets/SherwoodVersion/war.png'
 import ladymarian3 from '../../assets/ladymarian3.png'
 import UserCard from '../User/UserCard';
 import PlayerCard from '../Home/PlayerCard';
+import ButtonBrown from '../buttons/buttonbrown';
 const Tutoriales = () => {
     const [activeTab, setActiveTab] = useState('trucos-tab');
 
@@ -11,7 +12,7 @@ const Tutoriales = () => {
     };
 
     return (
-        <div class="w-full min-h-screen p-2 bg-slate-900/90">
+        <div class="w-full min-h-screen p-2 bg-neutral-950/60">
             <div class="relative right-0">
                 <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-medieval border-gold font-TrajanProBold" data-tabs="tabs" role="list">
                     <li class="z-30 flex-auto text-center ">
@@ -48,11 +49,6 @@ const Tutoriales = () => {
                     <div class={` ${activeTab === 'trucos-tab' ? '' : 'hidden'}`} id="trucos-tab" role="tabpanel" >
                         <p class="text-slate-400 font-light">
                             En sherwood dungoen existen una serie de trucos que te facilitaran algunas cosas y te haran disfrutar mas del juego, estos son los siguientes:
-                            <br />
-                            <span>-Hack de pets</span>
-                            <br />
-                            <span>-Hack de Armas</span>
-                            <br />
                             <span>-Hack de Clonar cuenta</span>
                             <br />
                             <span>-Hack de 'conquistar morras'</span>
@@ -60,7 +56,51 @@ const Tutoriales = () => {
                             <span>-Hack de putelquelee</span>
 
                         </p>
-                        <img src={ladymarian3} class="h-auto w-full my-4 border-gold" alt="Logo" />
+                        <div class=" h-auto w-full">
+                            <div class=" h-auto w-full my-4 bg-neutral-900 hover:brightness-120 rounded-lg">
+                                <div class="flex justify-end items-center">
+                                    {/* <h2 class="flex items-start justify-start font-QuadrataOst text-gray-300 text-xl my-2 hover:brightness-60">Trucos</h2> */}
+                                    <button type="button"
+                                        class="text-white h-full bg-neutral-800 hover:bg-gray-900 font-bold rounded-lg text-md px-5 py-2.5 m-2">
+                                        ---</button>
+                                    <button type="button"
+                                        class="text-white h-full bg-neutral-800 hover:bg-gray-900 font-bold rounded-lg text-md px-5 py-2.5 m-2">
+                                        Filtrar</button>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 h-auto w-full my-4 bg-neutral-900 hover:brightness-120">
+                                <div class="flex items-center justify-center ">
+                                    <img src={browser} class="flex max-h-60 w-full col-span-1 brightness-70" />
+                                </div>
+                                <div class="col-span-2 h-auto  p-4">
+                                    <span class="text-redSherwood font-TrajanProBold text-sm">Sherwood alpha 2.6</span>
+                                    <h2 class="font-TrajanProBold text-white text-xl my-2 hover:brightness-60">Hack de pets</h2>
+                                    <p class="text-neutral-500 font-sans my-4 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem, dignissimos nulla necessitatibus unde placeat quae ratione aut est cumque doloremque voluptate non suscipit voluptates, ut ab facilis quam error?</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 h-auto w-full my-4 bg-neutral-900 hover:brightness-120">
+                                <div class="flex items-center justify-center ">
+                                    <img src={ladymarian3} class="flex max-h-60 w-full col-span-1 brightness-70" />
+                                </div>
+                                <div class="col-span-2 h-auto  p-4">
+                                    <span class="text-redSherwood font-TrajanProBold text-sm">Sherwood alpha 2.6</span>
+                                    <h2 class="font-TrajanProBold text-white text-xl my-2 hover:brightness-60">Hack de armas</h2>
+                                    <p class="text-neutral-500 font-sans my-4 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem, dignissimos nulla necessitatibus unde placeat quae ratione aut est cumque doloremque voluptate non suscipit voluptates, ut ab facilis quam error?</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 h-auto w-full my-4 bg-neutral-900 hover:brightness-120">
+                                <div class="flex items-center justify-center ">
+                                    <img src={ladymarian3} class="flex max-h-60 w-full col-span-1 brightness-70" />
+                                </div>
+                                <div class="col-span-2 h-auto  p-4">
+                                    <span class="text-redSherwood font-TrajanProBold text-sm">Sherwood dungeon 2.6</span>
+                                    <h2 class="font-TrajanProBold text-white text-xl my-2 hover:brightness-60">Hack de clonar cuenta</h2>
+                                    <p class="text-neutral-500 font-sans my-4 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem, dignissimos nulla necessitatibus unde placeat quae ratione aut est cumque doloremque voluptate non suscipit voluptates, ut ab facilis quam error?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <img src={ladymarian3} class="h-auto w-full my-4 border-gold" alt="Logo" /> */}
                     </div>
                     <div class={` ${activeTab === 'manual-tab' ? '' : 'hidden'}`} id="manual-tab" role="tabpanel">
                         <p class="text-slate-400 font-light">

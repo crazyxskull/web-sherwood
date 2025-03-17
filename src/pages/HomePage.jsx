@@ -8,6 +8,7 @@ import PlayerCard from '../components/Home/PlayerCard';
 import ladymarianImage from '../assets/ladymarian.png';
 import sherwoodAlpha from '../assets/SherwoodVersion/sherwoodAlpha.png';
 import Home from '../components/Home';
+import Play from './Play';
 
 function HomePage() {
     return (

@@ -3,11 +3,12 @@ import React from 'react';
 import DarkbloodArmorSell from '../../assets/DarkbloodArmorSell.png'
 import CharacterSkull from '../../assets/CharacterSkull.png'
 import UserLogo from '../../assets/usuario-logo.png'
+
 function PlayerCard() {
     return (
-        <div class="flex w-full max-w-full bg-gray-800 rounded-lg border-dungeon">
+        <div class="flex w-full max-w-full bg-gray-950 rounded-lg border-dungeon">
 
-            <div class=" bg-gray-800 p-4 flex flex-col justify-between leading-normal">
+            <div class="p-4 flex flex-col justify-between leading-normal">
                 <div class="mb-8">
                     <p class="text-sm text-gray-600 flex items-center">
                         <svg class="fill-current text-white w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

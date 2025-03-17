@@ -68,7 +68,8 @@
   --color-redSherwood-900: #500b17;
   --color-textSherwood : #fff2a8;
   --color-blackSherwood : #3a0810;
-  --color-black-900 : #0c080a;
+  --color-black-900 : #1b1b1b;
+  --color-black-950 : #020202;
   --color-bgSherwod : #fff5d4;
   --color-Brown-500 : #967120;
   --color-Brown-700 : #775712;
@@ -76,7 +77,7 @@
   --color-bgblack : #282828;
 }
 .Sherwood{
-  color:#b12a2a;
+  color:#020202;
   color:#610e22;
 }
 

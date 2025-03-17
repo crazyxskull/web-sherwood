@@ -11,6 +11,8 @@ import SherwoodMetaverse from './pages/SherwoodMetaverse';
 import Clanes from './pages/Clanes';
 import Tutorial from './pages/Tutorial';
 import Descargas from './pages/Descargas';
+import Jugadores from './pages/Jugadores';
+import Sugerencias from './pages/Sugerencias';
 // import Registro from './components/Registro';
 
 import './App.css'
@@ -28,6 +30,8 @@ function App() {
         <Route path="/Clanes" element={<Clanes />} />
         <Route path="/Tutorial" element={<Tutorial />} />
         <Route path="/Descargas" element={<Descargas />} />
+        <Route path="/Jugadores" element={<Jugadores />} />
+        <Route path="/Sugerencias" element={<Sugerencias />} />
         {/* <Route path="/Registro" element={<Registro />} /> */}
         <Route path="/Play" element={<Play/>}/>
       </Routes>

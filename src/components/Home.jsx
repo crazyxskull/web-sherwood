@@ -59,7 +59,14 @@ function Home() {
                 </div>
 
             </div>
-
+            <div class="flex flex-col m-4 justify-start items-center border-piedra bg-gray-950 ">
+                <h1 className="mb-4 py-4 text-4xl
+                                                bg-redSherwood hover:bg-redSherwood-500 text-white font-QuadrataOst px-4 border-b-4
+                                                hover:border-redSherwood-hov rounded border-redSherwood-800 transition duration-150 hover:scale-105">SHERWOOD</h1>
+                <p className="flex font-medium text-gray-300 px-4 text-center">
+                    Un clan es una agrupación de personas con fines comunes para formar una entidad (normalmente militar) para defender terreno, ideales, etc. Los clanes siempre llevan iniciales para identificarse
+                </p>
+            </div>
             <div className="flex items-center justify-center h-full mt-6  text-lg font-QuadrataOst">
                 <Link to="/Play" className="flex items-center justify-center relative w-full h-full py-0">
                     <ButtonRed text="JUGAR SHERWOOD!" />

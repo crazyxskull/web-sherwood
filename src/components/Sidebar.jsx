@@ -34,11 +34,11 @@ const Sidebar = () => {
             <ListItem link={"/SherwoodMetaverse"} text={"CHAT SHERWOOD"} />
             <ListItem link={"/Tutorial"} text={"TUTORIALES"} />
             <ListItem link={"/Clanes"} text={"CLANES"} />
-            <ListItem link={"/#"} text={"REDES SOCIALES"} />
-            <ListItem link={"/#"} text={"PVP"} />
-            <ListItem link={"/#"} text={"GUERRA DE CLANES"} />
+            <ListItem link={"/Jugadores"} text={"JUGADORES"} />
             <ListItem link={"/#"} text={"MISIONES"} />
-            <ListItem link={"/#"} text={"SUGERENCIAS"} />
+            <ListItem link={"/#"} text={"GUERRA DE CLANES"} />
+            <ListItem link={"/#"} text={"PVP"} />
+            <ListItem link={"/Sugerencias"} text={"SUGERENCIAS"} />
           </ul>
         </nav>
         <div class="mt-8">
