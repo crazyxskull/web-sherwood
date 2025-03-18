@@ -20,7 +20,7 @@ const Clanes = () => {
                 <div className="flex flex-col flex-grow">
                     <Header />
                     <div className="flex flex-col ">
-                        <div class="flex flex-col justify-start items-center border-piedra bg-gray-950 ">
+                        <div class="flex flex-col justify-start items-center border-piedra bg-neutral-950 ">
                         {/* <h1 className="mb-4 py-4 text-4xl
                             bg-redSherwood hover:bg-redSherwood-500 text-white font-QuadrataOst px-4 border-b-4
                             hover:border-redSherwood-hov rounded border-redSherwood-800 transition duration-150 hover:scale-105">CLANES</h1> */}

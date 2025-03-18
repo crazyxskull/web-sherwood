@@ -1,54 +1,81 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
-import ButtonRed from '../components/buttons/buttonRed';
-import PlayerCard from '../components/Home/PlayerCard';
 import ladymarianImage from '../assets/ladymarian.png';
-import sherwoodAlpha from '../assets/SherwoodVersion/sherwoodAlpha.png';
-import Home from '../components/Home';
-import Play from './Play';
+import fulanitoGif from '../assets/cosmeFulanito.gif'; // Importa tu GIF
 
 const Sugerencias = () => {
+    const [suggestion, setSuggestion] = useState('');
+    const [submittedSuggestions, setSubmittedSuggestions] = useState([]);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (suggestion.trim() !== '') {
+            setSubmittedSuggestions([...submittedSuggestions, suggestion]);
+            setSuggestion('');
+        }
+    };
+
+    const handleChange = (e) => {
+        setSuggestion(e.target.value);
+    };
+
     return (
         <div
             className="flex flex-col min-h-screen w-full bg-fixed"
             style={{ backgroundImage: `url(${ladymarianImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className="flex w-full">
-                <div className="w-58"> {/* Ancho fijo para el Sidebar. Ajusta según necesidad */}
+                <div className="w-58">
                     <Sidebar />
                 </div>
-                <div className="flex flex-col flex-grow  items-center">
+                <div className="flex flex-col flex-grow items-center">
                     <Header />
                     <div className="flex w-2/5 h-3/4 flex-col border-sherwood bg-amber-50 rounded-lg shadow-xl my-12">
-                        <div className="text-gray-900 font-TrajanProBold p-4">
-                            <h2 className="text-xl mb-4 text-center">Alguna sugerencia para mi humilde pagina? xd</h2>
-                            <input/>
-                            <ul className="list-none">
-                                <li
-                                    // key={index}
-                                    className="py-2 border-b border-gray-300 last:border-b-0">
-                                    <a
-                                        // href={descarga.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-600 hover:text-blue-800 font-semibold"
-                                    >
-                                        caca
-                                    </a>
-                                    <p className="text-gray-700 text-sm">popo</p>
-                                </li>
-                            </ul>
+                        <div className="text-gray-900 p-4">
+                            <h2 className="text-xl mb-4 text-center font-TrajanProBold">Lo molesto con una sugerencia para mi pagina?</h2>
+
+                            {/* GIF antes del formulario */}
+                            <img src={fulanitoGif} alt="Suggestion GIF" className="mx-auto mb-4 rounded-md"/>
+
+                            <form onSubmit={handleSubmit} className="mb-4">
+                                <textarea
+                                    id="suggestion"
+                                    name="suggestion"
+                                    value={suggestion}
+                                    onChange={handleChange}
+                                    rows="4"
+                                    className="text-sm shadow appearance-none border rounded w-full py-2 px-3 bg-white font-TrajanProBold text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="Escribe tu sugerencia aquí..."
+                                />
+                                <button
+                                    type="submit"
+                                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-2"
+                                >
+                                    Enviar Sugerencia
+                                </button>
+                            </form>
+
+                            {submittedSuggestions.length > 0 && (
+                                <div>
+                                    <h3 className="text-lg mb-2">Sugerencias enviadas:</h3>
+                                    <ul className="list-disc list-inside text-sm font-medium">
+                                        {submittedSuggestions.map((s, index) => (
+                                            <li key={index} className="py-2 border-b border-gray-300 last:border-b-0 text-gray-700">
+                                                {s}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
                         </div>
                     </div>
                     <Footer />
                 </div>
             </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default Sugerencias
+export default Sugerencias;

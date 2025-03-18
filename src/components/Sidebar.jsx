@@ -30,14 +30,14 @@ const Sidebar = () => {
           <ul class="space-y-2">
             <ListItem link={"/Play"} text={"PLAY SHERWOOD!"} />
             <ListItem link={"/"} text={"INICIO"} />
-            <ListItem link={"/Profile"} text={"MI PERFIL"} />
+            <ListItem link={"/Wiki"} text={"WIKI"} />
             <ListItem link={"/SherwoodMetaverse"} text={"CHAT SHERWOOD"} />
-            <ListItem link={"/Tutorial"} text={"TUTORIALES"} />
+            <ListItem link={"/Profile"} text={"MI PERFIL"} />
             <ListItem link={"/Clanes"} text={"CLANES"} />
             <ListItem link={"/Jugadores"} text={"JUGADORES"} />
-            <ListItem link={"/#"} text={"MISIONES"} />
-            <ListItem link={"/#"} text={"GUERRA DE CLANES"} />
-            <ListItem link={"/#"} text={"PVP"} />
+            {/* <ListItem link={"/#"} text={"MISIONES"} />
+            <ListItem link={"/#"} text={"HISTORIA"} />
+            <ListItem link={"/#"} text={"PVP"} /> */}
             <ListItem link={"/Sugerencias"} text={"SUGERENCIAS"} />
           </ul>
         </nav>

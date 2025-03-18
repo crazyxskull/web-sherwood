@@ -54,7 +54,7 @@ function Header() {
                     <div className="flex h-full col-span-1">
                         <Link to="/Profile" className="flex justify-center items-center relative w-full h-full mx-auto col-span-1 col-7">
                             <div class="flex flex-row items-center">
-                                <img class="w-12 h-auto rounded-full mr-4 bg-black-900" alt="Logo" src={SwLogo} />
+                                <img class="w-12 h-auto rounded-full mr-4 bg-neutral-950" alt="Logo" src={SwLogo} />
                                 <div class="flex flex-col text-sm items-start">
                                     <p class="text-gray-100 leading-none">Jonathan Reinink </p>
                                     <p class="text-gray-200">Aug 18</p>

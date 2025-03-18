@@ -9,7 +9,7 @@ import AuthPage from './pages/AuthPage';
 import Profile from './pages/Profile';
 import SherwoodMetaverse from './pages/SherwoodMetaverse';
 import Clanes from './pages/Clanes';
-import Tutorial from './pages/Tutorial';
+import Wiki from './pages/Wiki';
 import Descargas from './pages/Descargas';
 import Jugadores from './pages/Jugadores';
 import Sugerencias from './pages/Sugerencias';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/SherwoodMetaverse" element={<SherwoodMetaverse />} />
         <Route path="/Clanes" element={<Clanes />} />
-        <Route path="/Tutorial" element={<Tutorial />} />
+        <Route path="/Wiki" element={<Wiki />} />
         <Route path="/Descargas" element={<Descargas />} />
         <Route path="/Jugadores" element={<Jugadores />} />
         <Route path="/Sugerencias" element={<Sugerencias />} />
