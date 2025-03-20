@@ -34,7 +34,7 @@ const Sugerencias = () => {
                     <Header />
                     <div className="flex w-2/5 h-3/4 flex-col border-sherwood bg-amber-50 rounded-lg shadow-xl my-12">
                         <div className="text-gray-900 p-4">
-                            <h2 className="text-xl mb-4 text-center font-TrajanProBold">Lo molesto con una sugerencia para mi pagina?</h2>
+                            <h2 className="text-xl mb-4 text-center font-TrajanProBold">Lo molesto con una sugerencilla para mi paginilla porfavor?</h2>
 
                             {/* GIF antes del formulario */}
                             <img src={fulanitoGif} alt="Suggestion GIF" className="mx-auto mb-4 rounded-md"/>

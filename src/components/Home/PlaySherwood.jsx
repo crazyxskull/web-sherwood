@@ -18,7 +18,7 @@ const PlaySherwood = () => {
         <div>
             {/* Contenedor que crece y empuja el footer hacia abajo */}
             <div className="flex flex-col flex-grow m-6 justify-center items-center">
-                <iframe class="aspect-video h-98 w-auto rounded-lg my-8 border-sherwood bg-bgSherwod"
+                <iframe class="aspect-video h-98 w-auto  border-gold "
                     src="https://www.youtube.com/embed/GiV4vz8tZhw">
                 </iframe>
                 <button className="mb-4 py-4 text-4xl

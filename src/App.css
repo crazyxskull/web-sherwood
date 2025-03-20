@@ -131,12 +131,14 @@
   border-image-slice: 80;
   border-image-repeat: round;
 }
-.border-sherwoodred{
+
+.border-gotico{
   border: 40px solid;
-  border-image-source: url('/src/assets/marcos/marcoRed.svg');
-  border-image-slice: 40;
+  border-image-source: url('/src/assets/marcos/Marco-gotico.svg');
+  border-image-slice: 250;
+  /* border-image-outset: 5px; */
   border-image-repeat: round;
-}
+} 
 .border-button{
   border:10px solid;
   border-image-source: url('/src/assets/marcos/MarcoButton.svg');

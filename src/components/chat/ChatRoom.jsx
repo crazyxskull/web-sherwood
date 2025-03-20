@@ -72,7 +72,7 @@ const ChatRoom = () => {
 
     // console.log(getMessageColor('player'))
     return (
-        <div class="flex flex-col w-full" >
+        <div class="flex flex-col w-full " >
             <div class="grid grid-cols-2 gap-4 w-2/4  rounded-lg  p-4">
                 <div class=" flex flex-row w-full grid-cols-2">
                     <input class="flex w-1/4 pl-2 pr-2 bg-emerald-400/60 text-white  focus:outline-none
