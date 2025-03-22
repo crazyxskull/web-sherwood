@@ -51,7 +51,28 @@
   font-display: swap;
   src: url('/src/assets/fonts/TrajanProBold.ttf') format('truetype');
 }
-
+@font-face {
+  font-family: 'EnchantedLand';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('/src/assets/fonts/EnchantedLand.otf') format('truetype');
+}
+@font-face {
+  font-family: 'PerrygothicRegular';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('/src/assets/fonts/PerrygothicRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Deutsch';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('/src/assets/fonts/Deutsch.ttf') format('truetype');
+}
+/* Deutsch */
 /* COLORES PERSONALIZADOS */
 @theme {
   --font-xtra: 'Xtra';
@@ -60,6 +81,9 @@
   --font-QuadrataOst: 'QuadrataOSTBold';
   --font-TrajanProBold: 'TrajanProBold';
   --font-TrajanProReg: 'TrajanProReg';
+  --font-EnchantedLand: 'EnchantedLand';
+  --font-PerrygothicRegular: 'PerrygothicRegular';
+  --font-Deutsch: 'Deutsch';
   --color-redSherwood : #c92641;
   --color-redSherwood-500 : #ec2e4d;
   --color-redSherwood-hov : #861729;
@@ -80,7 +104,9 @@
   color:#020202;
   color:#610e22;
 }
-
+.text-shadow {
+  text-shadow: 2px 2px 1px black;
+}
 /* MARCOS PERSONALIZADOS SHERWOOD */
 .border-gold{
   border: 10px solid;
@@ -103,37 +129,59 @@
   padding: 20px; /* Espacio interno */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
+.bg-medieval2{
+  background-image: url("/src/assets/medieval-texture2.png"); /* Fondo de papel */
+  background-size: cover; /* Ajusta el fondo al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+.bg-medieval3{
+  background-image: url("/src/assets/fondo-medieval.avif"); /* Fondo de papel */
+  background-size: cover; /* Ajusta el fondo al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
 .border-dungeon{
-  border: 30px solid;
+  border: 20px solid;
   border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
-  border-image-slice: 60;
-  border-image-outset: 5px;
-  border-image-repeat:round;
-}
-.border-t-dungeon{
-  border-top: 30px solid;
-  border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
-  border-image-slice: 60;
-  border-image-outset: 5px;
-  border-image-repeat:round;
-}
-.border-sherwood{
-  border: 40px solid;
-  border-image-source: url('/src/assets/marcos/borde-Sherwood.svg');
   border-image-slice: 40;
+  /* border-image-outset: 5px; */
+  border-image-repeat:round;
+}
+
+.border-sherwood{
+  border: 60px solid;
+  border-image-source: url('/src/assets/marcos/borde-Sherwood.svg');
+  border-image-slice: 50;
   border-image-outset: 5px;
   border-image-repeat:round;
 }
 .border-brown{
   border-bottom: 15px solid;
-  border-top: 15px solid;
+  /* border-top: 15px solid; */
   border-image-source: url('/src/assets/marcos/borde.svg');
   border-image-slice: 80;
   border-image-repeat: round;
 }
-
+/* .border-dorado{
+  border: 100px solid transparent;
+  border-image-source: url('/src/assets/marcos/borde-dorado.svg');
+  border-image-slice:120;
+  border-image-outset: 5px;
+  border-image-repeat:round;
+  filter: hue-rotate(10deg) sepia(100%) brightness(80%);
+} */
+.border-metal{
+  border: 40px solid transparent;
+  border-image-source: url('/src/assets/marcos/marcoMetalico.svg');
+  border-image-slice:90;
+  /* border-image-outset: 5px; */
+  border-image-repeat:round;
+}
 .border-gotico{
-  border: 40px solid;
+  border: 60px solid;
   border-image-source: url('/src/assets/marcos/Marco-gotico.svg');
   border-image-slice: 250;
   /* border-image-outset: 5px; */
