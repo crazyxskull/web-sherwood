@@ -16,7 +16,7 @@ function HomePage() {
     return (
         <div
             className="flex flex-col min-h-screen w-auto bg-fixed bg-neutral-950"
-            // style={{ backgroundImage: `url(${fondo2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ backgroundImage: `url(${fondo})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className="flex w-full">
                 <div className="w-58"> {/* Ancho fijo para el Sidebar. Ajusta según necesidad */}

@@ -11,7 +11,7 @@ console.log("este es un print desde el app.jsx")
 
 function Header() {
     return (
-        <header class="flex flex-col w-full font-QuadrataOst ">
+        <header class="flex flex-col w-full font-QuadrataOst border-b-brown">
             <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
                         items-center gap-x-4 bg-gray-800 
                 px-2 sm:px-4 shadow-sm transition-all w-full ">

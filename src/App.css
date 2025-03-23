@@ -119,7 +119,7 @@
   border: 60px solid;
   border-image: url("/src/assets/marcos/marco-piedra.png") 10 round; /* Borde con imagen */
   border-image-slice: 200;
-  border-image-outset: 5px;
+  border-image-outset: 12px;
   border-image-repeat:round;
 }
 .bg-medieval{
@@ -144,9 +144,9 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 .border-dungeon{
-  border: 20px solid;
+  border: 40px solid;
   border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
-  border-image-slice: 40;
+  border-image-slice: 60;
   /* border-image-outset: 5px; */
   border-image-repeat:round;
 }
@@ -160,19 +160,20 @@
 }
 .border-brown{
   border-bottom: 15px solid;
+  border-top: 15px solid;
+  border-image-source: url('/src/assets/marcos/borde.svg');
+  border-image-slice: 80;
+  border-image-repeat: round;
+  
+}
+.border-b-brown{
+  border-bottom: 15px solid;
   /* border-top: 15px solid; */
   border-image-source: url('/src/assets/marcos/borde.svg');
   border-image-slice: 80;
   border-image-repeat: round;
 }
-/* .border-dorado{
-  border: 100px solid transparent;
-  border-image-source: url('/src/assets/marcos/borde-dorado.svg');
-  border-image-slice:120;
-  border-image-outset: 5px;
-  border-image-repeat:round;
-  filter: hue-rotate(10deg) sepia(100%) brightness(80%);
-} */
+
 .border-metal{
   border: 40px solid transparent;
   border-image-source: url('/src/assets/marcos/marcoMetalico.svg');

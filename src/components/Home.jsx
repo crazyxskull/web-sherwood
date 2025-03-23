@@ -4,10 +4,12 @@ import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ButtonRed from '../components/buttons/buttonRed';
+import PlaySherwood from '../components/Home/PlaySherwood';
 import PlayerCard from '../components/Home/PlayerCard';
 import fondo from '../assets/fondoMedieval.jpg';
 import character from '../assets/paladinWoman.png';
 import sherwoodAlpha from '../assets/SherwoodVersion/sherwoodAlpha.png';
+import Historia from './Wikipedia/Historia';
 
 function Home() {
     return (
@@ -19,7 +21,7 @@ function Home() {
                     <div class="relative flex overflow-hidden ">
                         <img class="flex w-full h-130 object-cover bg-fixed" src={fondo} />
                         <div class="absolute text-white font-TrajanProBold grid grid-cols-4 grid-rows-3 object-cover">
-                            <img class="absolute col-span-1 mt-30  hidden md:flex " src={character} />
+                            <img class="absolute col-span-1 mt-30  hidden md:flex trasition-all duration-200 hover:scale-105" src={character} />
                             <div class="col-span-4 row-span-3 my-12 md:col-span-4 md:col-start-2 flex flex-col justify-center items-center">
                                 <h1 class="col-span-4 xl:col-span-3 md:col-span-3 md:col-start-2 mx-5 
                                 text-center font-Deutsch text-textSherwood
@@ -34,9 +36,17 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+                        {/* <div class="bg-bgSherwod border-piedra w-70 h-auto">
+                            <div>
+                                <PlayerCard/>
+                                <p className="flex font-medium text-slate-900 text-center">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea pariatur neque quos culpa alias temporibus aspernatur, natus, quia fugit at, fugiat obcaecati. Quaerat alias, voluptatem modi ducimus sed aut non?
+                                </p>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
-                <div class="z-50 border-brown">
+                <div class="z-50 border-b-brown">
                     {/* <button className="mb-4 py-4 text-4xl w-1/4
          bg-redSherwood hover:bg-redSherwood-500 text-white font-QuadrataOst px-4 border-b-4
          hover:border-redSherwood-hov rounded border-redSherwood-800 transition duration-150 hover:scale-105">
@@ -46,22 +56,37 @@ function Home() {
                     {/* <p className="flex font-medium text-white px-4 text-center">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea pariatur neque quos culpa alias temporibus aspernatur, natus, quia fugit at, fugiat obcaecati. Quaerat alias, voluptatem modi ducimus sed aut non?
                     </p> */}
+                    {/* <PlayerCard/> */}
                 </div>
                 <div class=" grid grid-cols-4 gap-4 m-6">
-                    <div class="bg-bgSherwod border-piedra col-span-3">
+                    <div class="bg-medieval col-span-3">
                         <div>
                             {/* <PlayerCard/> */}
                             <p className="flex font-medium text-slate-900 text-center">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea pariatur neque quos culpa alias temporibus aspernatur, natus, quia fugit at, fugiat obcaecati. Quaerat alias, voluptatem modi ducimus sed aut non?
                             </p>
                         </div>
+                        {/* <PlaySherwood /> */}
+                        {/* <Historia/> */}
                     </div>
-                    <div class="bg-bgSherwod border-piedra col-span-1">
+                    <div class="flex flex-col bg-medieval col-span-1  items-center justify-center">
+                        <h2 class="col-span-4 xl:col-span-3 md:col-span-3 md:col-start-2 mx-5 
+                                text-center font-QuadrataOst text-redSherwood
+                                xl:text-4xl text-4xl sm:text-3xl text-shadow" >PLAYERS!
+                        </h2>
                         <p className="flex font-medium text-slate-900 text-center">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea pariatur neque quos culpa alias temporibus aspernatur, natus, quia fugit at, fugiat obcaecati. Quaerat alias, voluptatem modi ducimus sed aut non?
+                            Lista de los mejores jugadores
                         </p>
+                        <div class="grid gap-2">
+                            <PlayerCard />
+                            <PlayerCard />
+                            <PlayerCard />
+                            <PlayerCard />
+                        </div>
+
                     </div>
                 </div>
+                <PlaySherwood />
             </div>
         </div>
     );

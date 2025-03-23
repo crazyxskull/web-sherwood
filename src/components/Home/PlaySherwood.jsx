@@ -18,14 +18,14 @@ const PlaySherwood = () => {
         <div>
             {/* Contenedor que crece y empuja el footer hacia abajo */}
             <div className="flex flex-col flex-grow m-6 justify-center items-center">
-                <iframe class="aspect-video h-98 w-auto  border-gold "
+                <iframe class="aspect-video h-98 w-auto  border-dungeon "
                     src="https://www.youtube.com/embed/GiV4vz8tZhw">
                 </iframe>
-                <button className="mb-4 py-4 text-4xl
+                {/* <button className="mb-4 py-4 text-4xl
          bg-redSherwood hover:bg-redSherwood-500 text-white font-QuadrataOst px-4 border-b-4
          hover:border-redSherwood-hov rounded border-redSherwood-800 transition duration-150 hover:scale-105">
                     Vamos a Jugar!!
-                </button>
+                </button> */}
 
                 <p className="flex font-medium text-white px-4 text-center">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea pariatur neque quos culpa alias temporibus aspernatur, natus, quia fugit at, fugiat obcaecati. Quaerat alias, voluptatem modi ducimus sed aut non?

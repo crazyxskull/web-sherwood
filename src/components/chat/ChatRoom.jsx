@@ -81,7 +81,7 @@ const ChatRoom = () => {
                 <form class="flex w-full justify-start items-start">
                     <label for="underline_select" class="sr-only">Tipo jugador</label>
                     <select id="underline_select" class="block pl-2 py-2.5 px-0 w-full text-sm text-black
-                     bg-white/60 border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+                     bg-white border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer"
                         value={userType}
                         onChange={handleUsertypeChange}>
                         <option selected>Choose a User</option>
@@ -92,7 +92,7 @@ const ChatRoom = () => {
                     </select>
                 </form>
             </div>
-            <nav className="flex flex-col-reverse h-48 overflow-y-hidden hover:overflow-y-auto p-2 bg-black-900/50 mx-4 rounded-lg ">
+            <nav className="flex flex-col-reverse h-48 overflow-y-hidden hover:overflow-y-auto p-2 bg-black-900/20 mx-4 rounded-lg ">
                 <div className="flex flex-col ">
                     {chatMessage.map((msg, index) => (
                         <div key={index} className="mb-1">

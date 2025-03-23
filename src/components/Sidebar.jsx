@@ -28,7 +28,7 @@ const Sidebar = () => {
         <hr class="w-50 h-px my-4 border-0 mx-auto bg-gray-300 mb-6 " />
         <nav class="text-xs ">
           <ul class="space-y-2">
-            <ListItem link={"/Play"} text={"PLAY SHERWOOD!"} />
+            {/* <ListItem link={"/Play"} text={"PLAY SHERWOOD!"} /> */}
             <ListItem link={"/"} text={"INICIO"} />
             <ListItem link={"/Wiki"} text={"WIKI"} />
             <ListItem link={"/SherwoodMetaverse"} text={"CHAT SHERWOOD"} />

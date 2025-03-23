@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ButtonRed from '../components/buttons/buttonRed';
 import ladymarianImage from '../assets/ladymarian.png';
+import fondoMedieval from '../assets/ia/fondoDN.png';
 import Misiones from '../components/Wikipedia/Misiones'
 import Historia from '../components/Wikipedia/Historia';
 import Carrusel from '../components/Carrusel';
@@ -19,20 +20,21 @@ const Wiki = () => {
     };
     return (
         <div
-            className="flex flex-col min-h-screen w-full bg-fixed"
-            style={{ backgroundImage: `url(${ladymarianImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            className="flex flex-col min-h-screen w-full bg-fixed "
+            style={{ backgroundImage: `url(${fondoMedieval})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-            <div className="flex w-full">
+            <div className="flex w-full bg-gray-950/60">
                 <div className="w-58"> {/* Ancho fijo para el Sidebar. Ajusta según necesidad */}
                     <Sidebar />
                 </div>
                 <div className="flex flex-col flex-grow">
                     <Header />
-                    <div class="w-full min-h-screen p-2 bg-neutral-950/60">
+                    <div class="w-full min-h-screen">
                         <div class="relative right-0">
-                            <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-medieval border-gold font-TrajanProBold" data-tabs="tabs" role="list">
+                            <ul class="relative flex items-center justify-center  
+                                        flex-wrap px-1.5 py-1.5 list-none bg-neutral-950/80 font-TrajanProBold text-shadow border-b-brown" data-tabs="tabs" role="list">
                                 <li class="z-30 flex-auto text-center ">
-                                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-black bg-inherit"
+                                    <a class="hover:text-gray-500 z-30 w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-white"
                                         id="historia-tab" role="tab"
                                         onClick={() => handleTabClick('historia-tab')}
                                         aria-selected={activeTab === 'historia-tab'}
@@ -41,7 +43,7 @@ const Wiki = () => {
                                     </a>
                                 </li>
                                 <li class="z-30 flex-auto text-center">
-                                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-sm transition-all ease-in-out border-0 rounded-lg cursor-pointer text-black bg-inherit"
+                                    <a class="hover:text-gray-500 z-30 w-full px-0 py-2 mb-0 text-lg transition-all ease-in-out border-0 rounded-lg cursor-pointer text-white"
                                         id="teleports-tab"
                                         role="tab"
                                         onClick={() => handleTabClick('teleports-tab')}
@@ -51,7 +53,7 @@ const Wiki = () => {
                                     </a>
                                 </li>
                                 <li class="z-30 flex-auto text-center">
-                                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-black bg-inherit"
+                                    <a class="hover:text-gray-500 z-30 w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-white"
                                         id="Comandos-tab"
                                         role="tab"
                                         onClick={() => handleTabClick('Comandos-tab')}
@@ -74,7 +76,7 @@ const Wiki = () => {
                                 </div>
                                 {/* <img src={ladymarian3} class="h-auto w-full my-4 border-gold" alt="Logo" /> */}
                             </div>
-                            <div class={` ${activeTab === 'teleports-tab' ? '' : 'hidden'}`} id="teleports-tab" role="tabpanel">
+                            <div class={`p-4 ${activeTab === 'teleports-tab' ? '' : 'hidden'}`} id="teleports-tab" role="tabpanel">
                                 <Misiones />
                             </div>
                             <div class={` ${activeTab === 'Comandos-tab' ? '' : 'hidden'}`} id="Comandos-tab" role="tabpanel">

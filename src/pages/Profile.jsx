@@ -27,9 +27,9 @@ const Profile = () => {
                 <div className="flex flex-col flex-grow">
                     <Header />
                     <div class="flex grid-cols-3 gap-4 p-6">
-                        <div class=" flex flex-col col-span-1 min-h-screen w-1/4 bg-gray-800 border-dungeon">
+                        <div class=" flex flex-col col-span-1 min-h-screen w-1/4 bg-gray-800 border-piedra">
                             <h1 class="text-white font-TrajanProBold">Tu personaje Chaval!</h1>
-                            <User3D class="bg-amber-50 flex " />
+                            {/* <User3D class="bg-amber-50 flex " /> */}
                             <div class="flex h-auto ">
                                 <UserStat />
                             </div>
