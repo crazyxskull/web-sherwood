@@ -2,7 +2,7 @@ import React from 'react';
 import misionesData from './MisionData';  // Importa el array de datos
 
 const Misiones = () => {
-    return (
+    return ( 
         <div>
             <div className="h-auto w-full ">
             <h1 className="text-5xl font-Deutsch text-center mb-6 text-textSherwood text-shadow">Teleports</h1>

@@ -21,10 +21,11 @@ const Sidebar = () => {
   return (
     <aside class=" flex-col sticky top-0 z-40 bg-gray-800 
       w-58 p-4 h-screen justify-start items-start text-white hidden sm:flex">
-      <div class="font-TrajanProBold">
-        <h1 class="text-xl">
-          BIENVENIDO SHERWOODIANO
-        </h1>
+      <div class="font-TrajanProBold ">
+          <h1 class="text-xl font-QuadrataOst  text-textSherwood ">
+            BIENVENIDO SHERWOODIANO
+          </h1>
+
         <hr class="w-50 h-px my-4 border-0 mx-auto bg-gray-300 mb-6 " />
         <nav class="text-xs ">
           <ul class="space-y-2">
