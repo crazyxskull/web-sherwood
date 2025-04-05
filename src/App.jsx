@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //Paginas
 import HomePage from './pages/HomePage';
 // import Login from './pages/Login';
+import Layout from './components/layout/Layout';
 import Play from './pages/Play';
 import AuthPage from './pages/AuthPage';
 import Profile from './pages/Profile';
@@ -22,18 +23,20 @@ function App() {
   return (
     <BrowserRouter basename="/web-sherwood/">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/Login" element={<Login />} /> */}
-        <Route path="/AuthPage" element={<AuthPage />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route path="/SherwoodMetaverse" element={<SherwoodMetaverse />} />
-        <Route path="/Clanes" element={<Clanes />} />
-        <Route path="/Wiki" element={<Wiki />} />
-        <Route path="/Descargas" element={<Descargas />} />
-        <Route path="/Jugadores" element={<Jugadores />} />
-        <Route path="/Sugerencias" element={<Sugerencias />} />
-        {/* <Route path="/Registro" element={<Registro />} /> */}
-        <Route path="/Play" element={<Play/>}/>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          {/* <Route path="/Login" element={<Login />} /> */}
+          <Route path="/AuthPage" element={<AuthPage />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/SherwoodMetaverse" element={<SherwoodMetaverse />} />
+          <Route path="/Clanes" element={<Clanes />} />
+          <Route path="/Wiki" element={<Wiki />} />
+          <Route path="/Descargas" element={<Descargas />} />
+          <Route path="/Jugadores" element={<Jugadores />} />
+          <Route path="/Sugerencias" element={<Sugerencias />} />
+          {/* <Route path="/Registro" element={<Registro />} /> */}
+          <Route path="/Play" element={<Play />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

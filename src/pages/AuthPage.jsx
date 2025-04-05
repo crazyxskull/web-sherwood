@@ -1,8 +1,8 @@
 // src/components/Home.jsx
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
+// import Header from '../components/Header';
+// import Sidebar from '../components/Sidebar';
+// import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ButtonRed from '../components/buttons/buttonRed';
 import PlayerCard from '../components/Home/PlayerCard';

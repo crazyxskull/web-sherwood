@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Header';
-import Footer from '../Footer';
+// import Header from '../Header';
+// import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import ButtonRed from '../buttons/buttonRed';
 import ladymarianImage from '../../assets/ladymarian.png';
@@ -8,7 +8,7 @@ import warsherwood from '../../assets/SherwoodVersion/warsherwood.png';
 import sherwoodAlpha from '../../assets/SherwoodVersion/sherwoodAlpha.png';
 import ieTAB from '../../assets/icons/ieTAB.png';
 import ActiveX_logo from '../../assets/icons/ActiveX_logo.png';
-import Sidebar from '../Sidebar';
+// import Sidebar from '../Sidebar';
 import ButtonBrown from '../buttons/buttonbrown';
 // import sherwoodBrowser from '../assets/browsers/SherwoodBrowser.Ink'
 console.log("este es un print desde el app.jsx");

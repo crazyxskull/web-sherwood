@@ -1,15 +1,16 @@
 import React from 'react';
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
+// import Header from '../components/Header';
+// import Sidebar from '../components/Sidebar';
+// import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import ButtonRed from '../components/buttons/buttonRed';
-import PlaySherwood from '../components/Home/PlaySherwood';
-import PlayerCard from '../components/Home/PlayerCard';
-import fondo from '../assets/fondoMedieval.jpg';
-import character from '../assets/paladinWoman.png';
-import sherwoodAlpha from '../assets/SherwoodVersion/sherwoodAlpha.png';
-import Historia from './Wikipedia/Historia';
+import ButtonRed from '../buttons/buttonRed';
+import PlaySherwood from './PlaySherwood';
+import PlayerCard from './PlayerCard';
+import fondo from '../../assets/fondoMedieval.jpg';
+import fondoCrazy from '../../assets/Ia/crazyvsDragon.png'
+import character from '../../assets/paladinWoman.png';
+import sherwoodAlpha from '../../assets/SherwoodVersion/sherwoodAlpha.png';
+import Historia from '../Wikipedia/Historia';
 
 function Home() {
     return (
@@ -59,7 +60,7 @@ function Home() {
                     {/* <PlayerCard/> */}
                 </div>
                 <div class=" grid grid-cols-4 gap-4 m-6">
-                    <div class="bg-medieval2 col-span-3 border-gold">
+                    <div class="bg-gray-900  col-span-3 border-gold">
                         <div>
                             {/* <PlayerCard/> */}
                             <p className="flex font-medium text-slate-900 text-center">
@@ -69,7 +70,7 @@ function Home() {
                         {/* <PlaySherwood /> */}
                         {/* <Historia/> */}
                     </div>
-                    <div class="flex flex-col bg-medieval col-span-1  items-center justify-center border-gold">
+                    <div class="flex flex-col bg-gray-900  col-span-1  items-center justify-center border-gold">
                         <h2 class="col-span-4 xl:col-span-3 md:col-span-3 md:col-start-2 mx-5 
                                 text-center font-QuadrataOst text-redSherwood
                                 xl:text-4xl text-4xl sm:text-3xl text-shadow" >PLAYERS!

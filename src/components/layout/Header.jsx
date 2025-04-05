@@ -1,19 +1,19 @@
 // src/components/Home.jsx
 import React from 'react';
-import LogoSherwood from '../assets/SherwoodLogo.webp';
-import UserLogo from '../assets/usuario-logo.png'
-import SwLogo from '../assets/SwLogo.png'
+import LogoSherwood from '../../assets/SherwoodLogo.webp';
+import UserLogo from '../../assets/usuario-logo.png'
+import SwLogo from '../../assets/SwLogo.png'
 import { Link } from 'react-router-dom';
 import { FaFacebookMessenger, FaEnvelope, FaSearch, FaTools } from "react-icons/fa";
-import '../App.css'; // Importa tu archivo CSS principal
-import ButtonRed from './buttons/buttonRed';
+import '../../App.css'; // Importa tu archivo CSS principal
+import ButtonRed from '../buttons/buttonRed';
 console.log("este es un print desde el app.jsx")
 
 function Header() {
     return (
         <header class="flex flex-col w-full font-QuadrataOst border-b-brown">
             <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
-                        items-center gap-x-4 bg-gray-800 
+                        items-center gap-x-4 bg-slate-900 
                 px-2 sm:px-4 shadow-sm transition-all w-full ">
                 <div class="mb-6 md:mb-0 col-span-2">
                     <Link to="/" className="flex items-center relative w-full h-full py-0">
