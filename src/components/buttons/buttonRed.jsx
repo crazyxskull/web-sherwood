@@ -2,7 +2,7 @@ import React from 'react';
 
 function ButtonRed({ text }) {
     const handleClick = () => {
-        alert("Click!");
+        // alert("Click!");
     };
 
     return (

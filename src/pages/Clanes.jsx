@@ -10,6 +10,7 @@ import clanDM from '../assets/clanes/logoDM.webp'
 import { FaSearch } from 'react-icons/fa';
 import ClanCard from '../components/Clan/ClanCard';
 import ButtonBrown from '../components/buttons/buttonbrown';
+import AgregarClan from '../components/Clan/AgregarClan';
 
 const Clanes = () => {
     return (
@@ -30,7 +31,7 @@ const Clanes = () => {
 
                 <div class=" flex w-full min-w-[200px] justify-between p-6">
                     <div>
-                        <ButtonBrown text="Crear Clan" />
+                        <AgregarClan />
                     </div>
                     <div class="relative flex items-center  bg-white text-gray-900 text-sm rounded-2xl">
                         <input
@@ -43,6 +44,7 @@ const Clanes = () => {
                         </button>
                     </div>
                 </div>
+
                 <div class="grid grid-cols-1 w-full p-2  ">
                     <ClanCard />
                 </div>

@@ -147,7 +147,7 @@
   border: 40px solid;
   border-image-source: url('/src/assets/marcos/marco-dungeon.svg');
   border-image-slice: 60;
-  /* border-image-outset: 5px; */
+  border-image-outset: 8px;
   border-image-repeat:round;
 }
 
