@@ -25,38 +25,35 @@ const Items = () => {
     };
 
     return (
-        <div className="flex flex-col w-full justify-center px-4 md:px-8"> {/* Añadido padding */}
+        <div className="flex flex-col bg-gray-900 w-full py-4 md:px-8 min-h-screen"> {/* Añadido padding */}
             <h1 className="text-5xl font-Deutsch text-center mb-6 text-textSherwood text-shadow">Items</h1>
 
             {/* Sección de Botones de Filtro */}
             <div className="flex justify-center space-x-4 mb-8">
                 <button
                     onClick={() => handleFilterChange('all')}
-                    className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${
-                        filter === 'all'
+                    className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${filter === 'all'
                             ? 'bg-redSherwood text-white'
                             : 'bg-gray-700 text-white hover:bg-gray-600'
-                    }`}
+                        }`}
                 >
                     Todo
                 </button>
                 <button
                     onClick={() => handleFilterChange('ring')}
-                    className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${
-                        filter === 'ring'
+                    className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${filter === 'ring'
                             ? 'bg-redSherwood text-white'
                             : 'bg-gray-700 text-white hover:bg-gray-600'
-                    }`}
+                        }`}
                 >
                     Anillos
                 </button>
                 <button
                     onClick={() => handleFilterChange('weapon')}
-                    className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${
-                        filter === 'weapon'
+                    className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${filter === 'weapon'
                             ? 'bg-redSherwood text-white'
                             : 'bg-gray-700 text-white hover:bg-gray-600'
-                    }`}
+                        }`}
                 >
                     Armas
                 </button>
@@ -64,12 +61,12 @@ const Items = () => {
 
             {/* Grid para mostrar los items filtrados */}
             {/* Ajusta grid-cols-* según necesites para diferentes tamaños de pantalla */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2"> {/* Responsive grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-10 gap-2 p-4"> {/* Responsive grid */}
                 {filteredItems.map(item => (
                     // La key debe ser única para cada item en la lista renderizada
                     <div key={item.id} className="flex flex-col h-auto w-full items-center p-2 hover:scale-105 shadow-2xs shadow-black  rounded-lg  bg-gray-950/80">
 
-                        <div className="flex items-center justify-center h-26"> {/* Contenedor con altura fija para imagen */}
+                        <div className="flex items-center justify-center h-20"> {/* Contenedor con altura fija para imagen */}
                             {item.image ? (
                                 <img
                                     src={item.image}
@@ -89,12 +86,12 @@ const Items = () => {
                         </div>
                     </div>
                 ))}
-                 {/* Mensaje si no hay items que coincidan con el filtro */}
-                 {filteredItems.length === 0 && (
+                {/* Mensaje si no hay items que coincidan con el filtro */}
+                {filteredItems.length === 0 && (
                     <p className="col-span-full text-center text-neutral-400 mt-4">
                         No hay items que mostrar para este filtro.
                     </p>
-                 )}
+                )}
             </div>
         </div>
     );

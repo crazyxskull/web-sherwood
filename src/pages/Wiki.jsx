@@ -14,6 +14,7 @@ import Historia from '../components/Wikipedia/Historia';
 import Carrusel from '../components/Carrusel';
 import Comandos from '../components/Wikipedia/Comandos';
 import Items from '../components/Wikipedia/Items';
+import Adicional from '../components/Wikipedia/Adicional';
 
 console.log("este es un print desde la pagina de tutoriales ");
 
@@ -132,11 +133,11 @@ const Wiki = () => {
                                 src="https://sherwooddungeon.fandom.com/es/wiki/Sherwood_(Historia)"
                             />
                         </div>
-                        <div className={`bg-fixed min-h-screen p-4 ${activeTab === 'teleports-tab' ? '' : 'hidden'}`} id="teleports-tab" role="tabpanel">
+                        <div className={`bg-fixed min-h-screen ${activeTab === 'teleports-tab' ? '' : 'hidden'}`} id="teleports-tab" role="tabpanel">
 
                             <Misiones />
                         </div>
-                        <div className={`bg-fixed min-h-screen p-4 ${activeTab === 'items-tab' ? '' : 'hidden'}`} id="items-tab" role="tabpanel"
+                        <div className={`${activeTab === 'items-tab' ? '' : 'hidden'}`} id="items-tab" role="tabpanel"
                             style={{ backgroundImage: `url(${fondoWar})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <Items />
                             {/* <p className="text-white">Contenido de Items aquí...</p> */}
@@ -153,9 +154,8 @@ const Wiki = () => {
                             style={{ backgroundImage: `url(${fondoCaverna})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <Comandos />
                         </div>
-                        <div className={`p-4 ${activeTab === 'adicional-tab' ? '' : 'hidden'}`} id="adicional-tab" role="tabpanel">
-                            {/* Contenido para Adicional */}
-                            <p className="text-white">Contenido Adicional aquí...</p>
+                        <div className={`${activeTab === 'adicional-tab' ? '' : 'hidden'}`} id="adicional-tab" role="tabpanel">
+                            <Adicional/>
                         </div>
                     </div>
                 </div>

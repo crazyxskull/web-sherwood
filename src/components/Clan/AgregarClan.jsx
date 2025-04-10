@@ -80,8 +80,8 @@ const AgregarClan = () => {
                             </div>
 
                             <div className="flex justify-between pt-4">
-                                <ButtonRed text="< Cancelar" onClick={() => setOpenModal(false)} />
-                                <ButtonRed text="Agregar >" type="submit" />
+                                <ButtonRed text="Cancelar" onClick={() => setOpenModal(false)} />
+                                <ButtonRed text="Agregar" type="submit" />
                             </div>
                         </form>
                     </div>

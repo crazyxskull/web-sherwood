@@ -18,7 +18,7 @@ function HomePage() {
     return (
         <div
             className="flex flex-col min-h-screen w-auto bg-fixed bg-neutral-950"
-            style={{ backgroundImage: `url(${fondo})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ backgroundImage: `url(${ladymarianImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <Home />
         </div>
