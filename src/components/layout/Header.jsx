@@ -13,7 +13,7 @@ function Header() {
     return (
         <header class="flex flex-col w-full font-QuadrataOst border-b-brown">
             <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
-                        items-center gap-x-4 bg-slate-900 
+                        items-center gap-x-4 bg-gray-800 
                 px-2 sm:px-4 shadow-sm transition-all w-full ">
                 <div class="mb-6 md:mb-0 col-span-2">
                     <Link to="/" className="flex items-center relative w-full h-full py-0">
@@ -23,10 +23,10 @@ function Header() {
                     </Link>
                 </div>
                 <div class="col-span-2  text-white font-Quadrata text xl">
-                    <h2>CONTENIDO</h2>
+                    {/* <h2>CONTENIDO</h2> */}
                 </div>
                 <div class="flex col-span-2 text-white h-12 w-auto gap-4 justify-start items-center">
-                    <div class="w-full max-w-sm min-w-[200px]">
+                    {/* <div class="w-full max-w-sm min-w-[200px]">
                         <div class="relative flex items-center  bg-white/15 text-gray-300 text-sm rounded-2xl  
                                ">
                             <input
@@ -48,7 +48,7 @@ function Header() {
                             type="button">
                             <FaTools class="h-5 w-auto" />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div class="flex flex-row col-span-1 col-6 gap-4">
                     <div className="flex h-full col-span-1">

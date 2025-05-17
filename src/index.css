@@ -9,3 +9,11 @@
   border-image-outset: 1rem;
   border-image-repeat:repeat;
 }
+
+@theme{
+  --color-ruby : #8a3535;
+}
+.Sherwood{
+  color:#8a3535;
+  color:#6f358a;
+}

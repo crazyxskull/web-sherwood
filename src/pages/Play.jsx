@@ -11,7 +11,7 @@ import ieTAB from '../assets/icons/ieTAB.png';
 import ActiveX_logo from '../assets/icons/ActiveX_logo.png';
 // import Sidebar from '../components/layout/Sidebar';
 import ButtonBrown from '../components/buttons/buttonbrown';
-import PlaySherwood from '../components/Home/PlaySherwood';
+import PlaySherwood from '../components/chat/PlaySherwood';
 // import sherwoodBrowser from '../assets/browsers/SherwoodBrowser.Ink'
 console.log("este es un print desde el app.jsx");
 

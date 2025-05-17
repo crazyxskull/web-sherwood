@@ -9,11 +9,12 @@ import User3D from '../components/User/User3D'
 import fondo from '../assets/fondoMedieval.jpg';
 import character from '../assets/paladinWoman.png';
 import ButtonRed from '../components/buttons/buttonRed'
+import PlaySherwood from '../components/chat/PlaySherwood'
 
 const SherwoodMetaverse = () => {
     return (
         <div
-            className="flex flex-col min-h-screen w-full bg-fixed"
+            className="flex flex-col min-h-screen w-full bg-fixed bg-gray-950"
         // style={{ backgroundImage: `url(${fondoMedieval})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
 
@@ -39,6 +40,9 @@ const SherwoodMetaverse = () => {
                     <div class="flex w-full justify-end items-end ">
                         <ChatRoom />
                     </div>
+                </div>
+                <div className="mt-20">
+                    <PlaySherwood />
                 </div>
             </div>
         </div>

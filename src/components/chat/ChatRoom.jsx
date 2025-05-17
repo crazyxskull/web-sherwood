@@ -72,7 +72,7 @@ const ChatRoom = () => {
 
     // console.log(getMessageColor('player'))
     return (
-        <div class="flex flex-col w-full bg-black" >
+        <div class="flex flex-col w-full bg-gray-900" >
             <div class="grid grid-cols-2 gap-4 w-2/4  rounded-lg  p-4">
                 <div class=" flex flex-row w-full grid-cols-2">
                     <input class="flex w-1/4 pl-2 pr-2 bg-emerald-400/60 text-white  focus:outline-none
@@ -92,7 +92,7 @@ const ChatRoom = () => {
                     </select>
                 </form>
             </div>
-            <nav className="flex flex-col-reverse h-48 overflow-y-hidden hover:overflow-y-auto p-2 bg-black-900/20 mx-4 rounded-lg ">
+            <nav className="flex flex-col-reverse h-48 overflow-y-hidden hover:overflow-y-auto p-2 bg-gray-600 mx-4 rounded-lg ">
                 <div className="flex flex-col ">
                     {chatMessage.map((msg, index) => (
                         <div key={index} className="mb-1">

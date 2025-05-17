@@ -1,61 +1,80 @@
-//Traer Anillos
+// Traer Anillos
 const rings = [];
-// import image from '../../assets/Wiki/items/anillos'
-// //en este caso se importa desde public ya que este no requiere de un import, trae las imagenes
+
+// Itera para crear cada objeto de anillo
 for (let i = 0; i <= 12; i++) {
-  let description = "";
-  // Asignar descripción según el ID del anillo
+  let title = "";       // Variable para almacenar el título específico
+  let description = ""; // Variable para almacenar la descripción específica
+
+  // Asignar título y descripción según el ID del anillo
   switch (i) {
     case 0:
-      description = "El primer anillo, poderoso y misterioso.";
+      title = "Ring of Health / Ring of Safekeeping";
+      description = "Aumenta la salud máxima o proporciona un escudo protector.";
       break;
     case 1:
-      description = "El segundo anillo, otorgado a los valientes.";
+      title = "Ring of Hardiness";
+      description = "Incrementa la resistencia general del portador.";
       break;
     case 2:
-      description = "Un anillo antiguo con runas grabadas.";
+      title = "Ring of Constitution";
+      description = "Mejora la vitalidad y la resistencia a dolencias.";
       break;
     case 3:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Armor / Ring of Fortification";
+      description = "Otorga una bonificación a la armadura física.";
       break;
     case 4:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Warding / Ring of Resistance";
+      description = "Proporciona resistencia contra ataques mágicos.";
       break;
     case 5:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Defense / Ring of Protection";
+      description = "Mejora la capacidad de bloqueo o desvío de ataques.";
       break;
     case 6:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Preservation / Ring of Imperviousness";
+      description = "Ayuda a mantener el estado actual, resistiendo efectos negativos.";
       break;
     case 7:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Victory / Ring of Supremacy";
+      description = "Incrementa las posibilidades de éxito en combate.";
       break;
     case 8:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Eminence / Ring of Dominion";
+      description = "Otorga una presencia imponente o mejora habilidades de liderazgo.";
       break;
     case 9:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Mastery / Ring of Conquest";
+      description = "Mejora la habilidad con armas o hechizos.";
       break;
     case 10:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Ascendancy / Ring of Triumph";
+      description = "Simboliza un gran logro o poder.";
       break;
     case 11:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Dominance / Ring of Adventure";
+      description = "Representa el control y la audacia en la exploración.";
       break;
     case 12:
-      description = "Este anillo brilla con una luz azulada.";
+      title = "Ring of Unnatural Health";
+      description = "Proporciona una cantidad de salud excepcionalmente alta.";
       break;
     default:
-      description = `Este es el anillo número ${i}.`;
+      // Fallback por si acaso el índice no está en el rango esperado
+      title = `Anillo Desconocido ${i}`;
+      description = `Información no disponible para el anillo ${i}.`;
   }
 
+  // Añade el objeto del anillo al array 'rings'
   rings.push({
     id: i,
-    title: `Anillo ${i}`,
-    description: description,
-    image: `/web-sherwood/assets/Wikipedia/Items/anillos/${i}.png`, // Import dinámico
-    type: 'ring' // <--- AÑADE ESTA LÍNEA
+    title: title, // Usa el título asignado en el switch
+    description: description, // Usa la descripción asignada en el switch
+    image: `/web-sherwood/assets/Wikipedia/Items/anillos/${i}.png`, // Asegúrate que esta ruta sea correcta desde tu carpeta 'public'
+    type: 'ring'
   });
 }
-console.log(rings); // Esto mostrará todas las rutas generadas en el array
+
+console.log(rings); // Verifica que los títulos y descripciones se hayan asignado correctamente
 export default rings;

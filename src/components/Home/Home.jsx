@@ -4,7 +4,7 @@ import React from 'react';
 // import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ButtonRed from '../buttons/buttonRed';
-import PlaySherwood from './PlaySherwood';
+import PlaySherwood from '../chat/PlaySherwood';
 import PlayerCard from './PlayerCard';
 import fondo from '../../assets/fondoMedieval.jpg';
 import fondoCrazy from '../../assets/Ia/crazyvsDragon.png'
@@ -14,7 +14,7 @@ import Historia from '../Wikipedia/Historia';
 
 function Home() {
     return (
-        <div className="flex flex-col  text-white">
+        <div className="flex flex-col bg-gray-950 text-white">
             {/* HERO */}
             <div className="relative w-full h-[600px]">
                 <img src={fondo} className="absolute inset-0 w-full h-full object-cover brightness-50" />
@@ -85,11 +85,6 @@ function Home() {
                         </ul>
                     </Section>
                 </div>
-            </div>
-
-            {/* FOOTER EXTRAS */}
-            <div className="mt-20">
-                <PlaySherwood />
             </div>
         </div>
     );

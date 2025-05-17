@@ -2,7 +2,7 @@ import React from 'react';
 
 const Comandos = () => {
     return (
-        <div className="lg:p-2 lg:w-4/5 w-full mx-auto text-white font-Quadrata border-gold bg-neutral-950/90">
+        <div className="lg:p-2 lg:w-4/5 w-full mx-auto text-white font-Quadrata border-dungeon bg-fixed bg-neutral-950/90">
             <div class="p-6">
                 <h1 className="text-5xl font-PerrygothicRegular text-center text-textSherwood mb-6">Comandos</h1>
                 <p className=" mb-4">

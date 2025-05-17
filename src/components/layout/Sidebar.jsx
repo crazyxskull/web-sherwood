@@ -33,7 +33,7 @@ const Sidebar = () => {
     { link: "/Sugerencias", text: "SUGERENCIAS", icon: AiOutlineMessage },
   ];
   return (
-    <aside class={`flex-col sticky top-0 z-40 min-h-screen text-white hidden sm:flex bg-slate-800  
+    <aside class={`flex-col sticky top-0 z-40 min-h-screen text-white hidden sm:flex bg-gray-800 
       ${isOpen ? "w-58" : " w-20"} duration-300 relative`}>
       <div class="flex items-center justify-center w-full mt-4">
         <FiMenu class={`text-gray-300 w-full hover:scale-115 hover:text-white duration-200 cursor-pointer 

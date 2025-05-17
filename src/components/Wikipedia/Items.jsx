@@ -1,6 +1,10 @@
-import React, { useState, useMemo } from 'react'; // Importa useState y useMemo
+import React, { useState, useMemo, Suspense } from 'react'; // <-- Añade Suspense aquí
 import ringsData from './RingData';    // Renombrado para claridad
 import weaponsData from './WeaponData'; // Renombrado para claridad
+
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Stage } from '@react-three/drei'; // Stage ayuda con iluminación y centrado
+import GladiusModel from '../../models/Armas/GladiusModel'; // Importa tu nuevo componente
 
 // Combina los datos UNA SOLA VEZ fuera del componente o con useMemo
 // Asegúrate que cada item tenga la propiedad 'type' como se indicó antes
@@ -27,14 +31,46 @@ const Items = () => {
     return (
         <div className="flex flex-col bg-gray-900 w-full py-4 md:px-8 min-h-screen"> {/* Añadido padding */}
             <h1 className="text-5xl font-Deutsch text-center mb-6 text-textSherwood text-shadow">Items</h1>
+            <div style={{ height: '400px', width: '100%', background: '#020202' }}> {/* Fondo un poco más claro */}
+                <Canvas camera={{ fov: 50, position: [0, 2, 6] }}> {/* Cámara un poco más atrás y FOV ajustado */}
 
+                    <Suspense fallback={null}>
+                        {/* --- ILUMINACIÓN MANUAL --- */}
+                        {/* Luz ambiental básica para que nada esté completamente negro */}
+                        <ambientLight intensity={0.2} />
+                        {/* Luz direccional para dar forma y reflejos */}
+                        <directionalLight
+                            position={[5, 10, 7]} // Posición de la luz (viene desde arriba-derecha-adelante)
+                            intensity={1.0}      // Intensidad
+                            castShadow           // Opcional: para que arroje sombras
+                        />
+
+                        {/* --- EL MODELO --- */}
+                        <GladiusModel
+                            scale={1.5} // Mantenemos la escala
+                            position={[0, -0.5, 0]} // Bajamos un poco el modelo por si el pivote está raro
+                            rotation={[0, Math.PI / 4, 0]}
+                        />
+                        <axesHelper args={[3]} />
+                        {/* Un helper de grid en el suelo */}
+                        <gridHelper args={[10, 10]} />
+                        <Stage environment="city" intensity={0.6} shadows={false}>
+                            <GladiusModel
+                                scale={1.5}
+                                rotation={[0, Math.PI / 4, 0]}
+                            />
+                        </Stage>
+                    </Suspense>
+                    <OrbitControls enableZoom={true} />
+                </Canvas>
+            </div>
             {/* Sección de Botones de Filtro */}
             <div className="flex justify-center space-x-4 mb-8">
                 <button
                     onClick={() => handleFilterChange('all')}
                     className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${filter === 'all'
-                            ? 'bg-redSherwood text-white'
-                            : 'bg-gray-700 text-white hover:bg-gray-600'
+                        ? 'bg-redSherwood text-white'
+                        : 'bg-gray-700 text-white hover:bg-gray-600'
                         }`}
                 >
                     Todo
@@ -42,8 +78,8 @@ const Items = () => {
                 <button
                     onClick={() => handleFilterChange('ring')}
                     className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${filter === 'ring'
-                            ? 'bg-redSherwood text-white'
-                            : 'bg-gray-700 text-white hover:bg-gray-600'
+                        ? 'bg-redSherwood text-white'
+                        : 'bg-gray-700 text-white hover:bg-gray-600'
                         }`}
                 >
                     Anillos
@@ -51,8 +87,8 @@ const Items = () => {
                 <button
                     onClick={() => handleFilterChange('weapon')}
                     className={`px-4 py-2 rounded font-EnchantedLand transition-colors ${filter === 'weapon'
-                            ? 'bg-redSherwood text-white'
-                            : 'bg-gray-700 text-white hover:bg-gray-600'
+                        ? 'bg-redSherwood text-white'
+                        : 'bg-gray-700 text-white hover:bg-gray-600'
                         }`}
                 >
                     Armas
@@ -80,9 +116,9 @@ const Items = () => {
                         </div>
 
                         <div className="flex flex-col justify-center items-center text-center mt-2">
-                            <h2 className="font-TrajanProBold text-white text-sm">{item.title}</h2>
+                            <h2 className="font-TrajanProBold text-white text-xs">{item.title}</h2>
                             {/* La descripción puede ser opcional o más corta */}
-                            <p className="text-neutral-500 font-sans text-xs mt-1">{item.description}</p>
+                            <p className="text-neutral-500 font-serif text-xs mt-1">{item.description}</p>
                         </div>
                     </div>
                 ))}

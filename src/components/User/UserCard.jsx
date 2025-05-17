@@ -3,6 +3,8 @@ import SwLogo from '../../assets/SwLogo.png';
 import skullLogo from '../../assets/icons/297.png';
 import DarthProfile from '../../assets/profile/darth-rana.jpg';
 import { createRoot } from 'react-dom/client';
+import User3D from './User3D';
+// import GladiusModel from '../../models/Armas/GladiusModel';
 // import User3D from './User3D';
 
 // createRoot(document.getElementById('root')).render(<User3D />)
@@ -43,7 +45,7 @@ const UserCard = () => {
                 </div>
             </div>
             <div class=" flex">
-                {/* <User3D class="bg-amber-50 flex "/> */}
+                <User3D class="bg-amber-50 flex "/>
             </div>
         </article>
     )
