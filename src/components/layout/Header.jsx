@@ -13,7 +13,7 @@ function Header() {
     return (
         <header class="flex flex-col w-full font-QuadrataOst border-b-brown">
             <div class="grid grid-cols-8 gap-4 justify-between sticky top-0 z-40 h-18 
-                        items-center gap-x-4 bg-gray-800 
+                        items-center gap-x-4 bg-gray-900 inset-ring-4 inset-ring-neutral-950
                 px-2 sm:px-4 shadow-sm transition-all w-full ">
                 <div class="mb-6 md:mb-0 col-span-2">
                     <Link to="/" className="flex items-center relative w-full h-full py-0">

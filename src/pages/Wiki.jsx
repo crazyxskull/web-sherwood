@@ -27,7 +27,7 @@ const Wiki = () => {
 
     return (
         <div
-            className="flex flex-col min-h-screen w-full bg-fixed "
+            className="flex flex-col min-h-screen w-full bg-fixed bg-gray-900"
             style={{ backgroundImage: `url(${ladymarianImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className="w-full min-h-screen">

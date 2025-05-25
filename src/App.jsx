@@ -14,6 +14,7 @@ import Wiki from './pages/Wiki';
 import Descargas from './pages/Descargas';
 import Jugadores from './pages/Jugadores';
 import Sugerencias from './pages/Sugerencias';
+import Misiones from './components/Wikipedia/Misiones';
 // import Registro from './components/Registro';
 
 import './App.css'
@@ -34,6 +35,7 @@ function App() {
           <Route path="/Descargas" element={<Descargas />} />
           <Route path="/Jugadores" element={<Jugadores />} />
           <Route path="/Sugerencias" element={<Sugerencias />} />
+          <Route path="/Misiones" element={<Misiones />} />
           {/* <Route path="/Registro" element={<Registro />} /> */}
           <Route path="/Play" element={<Play />} />
         </Route>

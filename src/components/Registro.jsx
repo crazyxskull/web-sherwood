@@ -5,7 +5,7 @@ import { TfiCalendar } from 'react-icons/tfi'
 import 'react-datepicker/dist/react-datepicker.css'; //esto es muy importante al momento de importar los calendarios
 import { Link, useNavigate } from 'react-router-dom';
 import ButtonRed from '../components/buttons/buttonRed';
-import PlayerCard from '../components/Home/PlayerCard';
+import PlayerCard from '../components/Players/PlayerCard';
 import ladymarianImage from '../assets/ladymarian.png';
 import SherwoodDungeonLogo from '../assets/921_UI_element_SWLogo.png';
 import ButtonBrown from './buttons/buttonbrown';

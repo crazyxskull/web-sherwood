@@ -1,6 +1,4 @@
 import React from 'react'
-import SwLogo from '../../assets/SwLogo.png';
-import skullLogo from '../../assets/icons/297.png';
 import DarthProfile from '../../assets/profile/darth-rana.jpg';
 import { createRoot } from 'react-dom/client';
 import User3D from './User3D';

@@ -18,11 +18,11 @@ function Descargas() {
 
     return (
         <div
-            className="flex flex-col min-h-screen w-full bg-fixed"
+            className="flex flex-col justify-center items-center min-h-screen w-full bg-fixed"
             style={{ backgroundImage: `url(${ladymarianImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
 
-            <div className="flex w-2/5 h-3/4 flex-col border-sherwood bg-amber-50 rounded-lg shadow-xl my-12">
+            <div className="flex w-2/5 h-3/4 flex-col border-sherwood  bg-amber-50 rounded-lg shadow-xl my-12">
                 <div className="text-gray-900 font-TrajanProBold p-4">
                     <h2 className="text-2xl mb-4 text-center">Descargas Esenciales</h2>
                     <ul className="list-none">

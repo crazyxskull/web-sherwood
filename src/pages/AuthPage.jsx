@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 // import Header from '../components/Header';
 // import Sidebar from '../components/Sidebar';
 // import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
-import ButtonRed from '../components/buttons/buttonRed';
-import PlayerCard from '../components/Home/PlayerCard';
+// import { Link } from 'react-router-dom';
+// import ButtonRed from '../components/buttons/buttonRed';
+// import PlayerCard from '../components/Home/PlayerCard';
 import ladymarianImage from '../assets/ladymarian.png';
-import SherwoodDungeonLogo from '../assets/921_UI_element_SWLogo.png';
-import FondoMaidmarian from '../assets/FondoMaidmarian.png'
-import ButtonBrown from '../components/buttons/buttonbrown';
+// import SherwoodDungeonLogo from '../assets/921_UI_element_SWLogo.png';
+// import FondoMaidmarian from '../assets/FondoMaidmarian.png'
+// import ButtonBrown from '../components/buttons/buttonbrown';
 import Login from '../components/Login';
 import Registro from '../components/Registro';
 

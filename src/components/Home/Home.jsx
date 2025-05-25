@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ButtonRed from '../buttons/buttonRed';
 import PlaySherwood from '../chat/PlaySherwood';
-import PlayerCard from './PlayerCard';
+import PlayerCard from '../Players/PlayerCard';
 import fondo from '../../assets/fondoMedieval.jpg';
 import fondoCrazy from '../../assets/Ia/crazyvsDragon.png'
 import character from '../../assets/paladinWoman.png';

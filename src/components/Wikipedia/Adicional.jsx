@@ -2,7 +2,7 @@ import React from 'react'
 
 const Adicional = () => {
     return (
-        <div className="p-6 bg-gray-900 text-white rounded-2xl shadow-lg space-y-6 min-h-screen">
+        <div className="p-6 bg-gray-950/70 text-white rounded-2xl shadow-lg space-y-6 min-h-screen">
             <h2 className="text-4xl font-Deutsch text-center text-textSherwood">Guía Rápida para Jugar Sherwood Dungeon</h2>
             <div className="grid grid-cols-2">
                 <div className="col-span-1 space-y-3">
